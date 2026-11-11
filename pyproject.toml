@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "findmy-sound"
+version = "0.1.0"
+description = "Small local CLI to list Apple devices and trigger Play Sound via iCloud Find Devices."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    # Pinned to the current release evaluated during project setup (2026-08-04).
+    # pyicloud 2.6.5 uses SRP-based auth (no browser automation), supports
+    # OS keyring password storage, and dynamically discovers the Find My
+    # service URL rather than hardcoding it. Re-verify before bumping:
+    # https://github.com/picklepete/pyicloud/releases
+    "pyicloud==2.6.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pip-audit>=2.7",
+]
+
+[project.scripts]
+findmy = "findmy_sound.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
