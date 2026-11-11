@@ -1,3 +1,1 @@
-"""findmy-sound: a small, auditable CLI for iCloud Find Devices Play Sound."""
-
-__version__ = "0.1.0"
+IiIiZmluZG15LXNvdW5kOiBhIHNtYWxsLCBhdWRpdGFibGUgQ0xJIGZvciBpQ2xvdWQgRmluZCBEZXZpY2VzIFBsYXkgU291bmQuIiIiCgpfX3ZlcnNpb25fXyA9ICIwLjIuMCIK
