@@ -1,1 +1,32 @@
-W2J1aWxkLXN5c3RlbV0KcmVxdWlyZXMgPSBbInNldHVwdG9vbHM+PTY4IiwgIndoZWVsIl0KYnVpbGQtYmFja2VuZCA9ICJzZXR1cHRvb2xzLmJ1aWxkX21ldGEiCgpbcHJvamVjdF0KbmFtZSA9ICJmaW5kbXktc291bmQiCnZlcnNpb24gPSAiMC4yLjAiCmRlc2NyaXB0aW9uID0gIlNtYWxsIENMSSBhbmQgYXV0aGVudGljYXRlZCBIVFRQIHNlcnZpY2UgdG8gbGlzdCBBcHBsZSBkZXZpY2VzIGFuZCB0cmlnZ2VyIFBsYXkgU291bmQgdmlhIGlDbG91ZCBGaW5kIERldmljZXMuIgpyZWFkbWUgPSAiUkVBRE1FLm1kIgpyZXF1aXJlcy1weXRob24gPSAiPj0zLjEwIgpsaWNlbnNlID0geyB0ZXh0ID0gIk1JVCIgfQoKZGVwZW5kZW5jaWVzID0gWwogICAgIyBQaW5uZWQgdG8gdGhlIGN1cnJlbnQgcmVsZWFzZSBldmFsdWF0ZWQgZHVyaW5nIHByb2plY3Qgc2V0dXAgKDIwMjYtMDgtMDQpLgogICAgIyBweWljbG91ZCAyLjYuNSB1c2VzIFNSUC1iYXNlZCBhdXRoIChubyBicm93c2VyIGF1dG9tYXRpb24pLCBzdXBwb3J0cwogICAgIyBPUyBrZXlyaW5nIHBhc3N3b3JkIHN0b3JhZ2UsIGFuZCBkeW5hbWljYWxseSBkaXNjb3ZlcnMgdGhlIEZpbmQgTXkKICAgICMgc2VydmljZSBVUkwgcmF0aGVyIHRoYW4gaGFyZGNvZGluZyBpdC4gUmUtdmVyaWZ5IGJlZm9yZSBidW1waW5nOgogICAgIyBodHRwczovL2dpdGh1Yi5jb20vcGlja2xlcGV0ZS9weWljbG91ZC9yZWxlYXNlcwogICAgInB5aWNsb3VkPT0yLjYuNSIsCl0KCltwcm9qZWN0Lm9wdGlvbmFsLWRlcGVuZGVuY2llc10KZGV2ID0gWwogICAgInB5dGVzdD49OC4wIiwKICAgICJwaXAtYXVkaXQ+PTIuNyIsCl0KCltwcm9qZWN0LnNjcmlwdHNdCmZpbmRteSA9ICJmaW5kbXlfc291bmQuY2xpOm1haW4iCgpbdG9vbC5zZXR1cHRvb2xzLnBhY2thZ2VzLmZpbmRdCndoZXJlID0gWyJzcmMiXQo=
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "findmy-sound"
+version = "0.2.0"
+description = "Small CLI and authenticated HTTP service to list Apple devices and trigger Play Sound via iCloud Find Devices."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+dependencies = [
+    # Pinned to the current release evaluated during project setup (2026-08-04).
+    # pyicloud 2.6.5 uses SRP-based auth (no browser automation), supports
+    # OS keyring password storage, and dynamically discovers the Find My
+    # service URL rather than hardcoding it. Re-verify before bumping:
+    # https://github.com/picklepete/pyicloud/releases
+    "pyicloud==2.6.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pip-audit>=2.7",
+]
+
+[project.scripts]
+findmy = "findmy_sound.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
