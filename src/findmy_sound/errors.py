@@ -1,1 +1,76 @@
-IiIiVXNlci1mcmllbmRseSBlcnJvciB0eXBlcyBmb3IgZmluZG15LXNvdW5kLgoKVGhlc2Ugd3JhcCB0aGUgbG93ZXItbGV2ZWwgcHlpY2xvdWQvcmVxdWVzdHMgZXhjZXB0aW9ucyBzbyB0aGF0IGNhbGxlcnMKKGNsaS5weSBhbmQgc2VydmVyLnB5IGluIHBhcnRpY3VsYXIpIG9ubHkgZXZlciBuZWVkIHRvIGNhdGNoIGEgc21hbGwsCnN0YWJsZSBzZXQgb2YgZXhjZXB0aW9uIHR5cGVzIGluc3RlYWQgb2YgcmVhY2hpbmcgaW50byBweWljbG91ZCBpbnRlcm5hbHMuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKCmNsYXNzIEZpbmRNeVNvdW5kRXJyb3IoRXhjZXB0aW9uKToKICAgICIiIkJhc2UgY2xhc3MgZm9yIGFsbCBmaW5kbXktc291bmQgZXJyb3JzLiIiIgoKCmNsYXNzIEF1dGhlbnRpY2F0aW9uRXJyb3IoRmluZE15U291bmRFcnJvcik6CiAgICAiIiJSYWlzZWQgd2hlbiBBcHBsZSBJRCBhdXRoZW50aWNhdGlvbiBmYWlscyAoYmFkIGNyZWRlbnRpYWxzKS4iIiIKCgpjbGFzcyBUd29GYWN0b3JSZXF1aXJlZEVycm9yKEZpbmRNeVNvdW5kRXJyb3IpOgogICAgIiIiUmFpc2VkIHdoZW4gdGhlIHNlc3Npb24gcmVxdWlyZXMgYSB0d28tZmFjdG9yIGNvZGUgdGhlIGNhbGxlciBtdXN0IHN1cHBseS4iIiIKCgpjbGFzcyBTZXNzaW9uRXhwaXJlZEVycm9yKEZpbmRNeVNvdW5kRXJyb3IpOgogICAgIiIiUmFpc2VkIHdoZW4gYSBwcmV2aW91c2x5IHRydXN0ZWQgc2Vzc2lvbiBpcyBubyBsb25nZXIgdmFsaWQuIiIiCgoKY2xhc3MgRGV2aWNlTm90Rm91bmRFcnJvcihGaW5kTXlTb3VuZEVycm9yKToKICAgICIiIlJhaXNlZCB3aGVuIGEgcmVxdWVzdGVkIGRldmljZSBJRCBkb2VzIG5vdCBtYXRjaCBhbnkga25vd24gZGV2aWNlLiIiIgoKICAgIGRlZiBfX2luaXRfXyhzZWxmLCBkZXZpY2VfaWQ6IHN0cikgLT4gTm9uZToKICAgICAgICBzdXBlcigpLl9faW5pdF9fKGYiTm8gZGV2aWNlIGZvdW5kIHdpdGggSUQ6IHtkZXZpY2VfaWR9IikKICAgICAgICBzZWxmLmRldmljZV9pZCA9IGRldmljZV9pZAoKCmNsYXNzIEFtYmlndW91c0RldmljZU5hbWVFcnJvcihGaW5kTXlTb3VuZEVycm9yKToKICAgICIiIlJhaXNlZCB3aGVuIGEgbmFtZS1iYXNlZCBsb29rdXAgbWF0Y2hlcyBtb3JlIHRoYW4gb25lIGRldmljZS4KCiAgICBUaGUgY2FsbGVyIG11c3QgYmUgZm9yY2VkIHRvIGRpc2FtYmlndWF0ZSB3aXRoIGFuIGV4cGxpY2l0IGRldmljZSBJRDsKICAgIHRoaXMgdG9vbCBuZXZlciBndWVzc2VzIHdoaWNoIGRldmljZSB3YXMgbWVhbnQuCiAgICAiIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgbmFtZTogc3RyLCBtYXRjaGluZ19pZHM6IGxpc3Rbc3RyXSkgLT4gTm9uZToKICAgICAgICBzdXBlcigpLl9faW5pdF9fKAogICAgICAgICAgICBmIk11bHRpcGxlIGRldmljZXMgbWF0Y2ggbmFtZSAne25hbWV9Jy4gIgogICAgICAgICAgICBmIlJlLXJ1biB3aXRoIGFuIGV4cGxpY2l0IC0tZGV2aWNlLWlkLiBDYW5kaWRhdGVzOiB7JywgJy5qb2luKG1hdGNoaW5nX2lkcyl9IgogICAgICAgICkKICAgICAgICBzZWxmLm5hbWUgPSBuYW1lCiAgICAgICAgc2VsZi5tYXRjaGluZ19pZHMgPSBtYXRjaGluZ19pZHMKCgpjbGFzcyBTb3VuZFVuYXZhaWxhYmxlRXJyb3IoRmluZE15U291bmRFcnJvcik6CiAgICAiIiJSYWlzZWQgd2hlbiB0aGUgc2VsZWN0ZWQgZGV2aWNlIGRvZXMgbm90IHN1cHBvcnQgUGxheSBTb3VuZC4iIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgZGV2aWNlX2lkOiBzdHIpIC0+IE5vbmU6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXyhmIlBsYXkgU291bmQgaXMgbm90IGF2YWlsYWJsZSBmb3IgZGV2aWNlOiB7ZGV2aWNlX2lkfSIpCiAgICAgICAgc2VsZi5kZXZpY2VfaWQgPSBkZXZpY2VfaWQKCgpjbGFzcyBTZXJ2aWNlVW5hdmFpbGFibGVFcnJvcihGaW5kTXlTb3VuZEVycm9yKToKICAgICIiIlJhaXNlZCB3aGVuIEFwcGxlJ3MgRmluZCBNeSBzZXJ2aWNlIGlzIHVucmVhY2hhYmxlIG9yIG5vdCBhY3RpdmF0ZWQuIiIiCgoKY2xhc3MgTWFsZm9ybWVkUmVzcG9uc2VFcnJvcihGaW5kTXlTb3VuZEVycm9yKToKICAgICIiIlJhaXNlZCB3aGVuIEFwcGxlIHJldHVybnMgYSByZXNwb25zZSB0aGlzIHRvb2wgY2Fubm90IHBhcnNlIHNhZmVseS4iIiIKCgpjbGFzcyBQcm9maWxlTm90Rm91bmRFcnJvcihGaW5kTXlTb3VuZEVycm9yKToKICAgICIiIlJhaXNlZCB3aGVuIGEgcmVxdWVzdGVkIHByb2ZpbGUgbmFtZSBoYXMgbm8gY29uZmlndXJhdGlvbi4iIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgcHJvZmlsZTogc3RyKSAtPiBOb25lOgogICAgICAgIHN1cGVyKCkuX19pbml0X18oZiJObyBwcm9maWxlIGNvbmZpZ3VyZWQgd2l0aCBuYW1lOiB7cHJvZmlsZX0iKQogICAgICAgIHNlbGYucHJvZmlsZSA9IHByb2ZpbGUKCgpjbGFzcyBSYXRlTGltaXRlZEVycm9yKEZpbmRNeVNvdW5kRXJyb3IpOgogICAgIiIiUmFpc2VkIHdoZW4gYSByaW5nIHJlcXVlc3QgZXhjZWVkcyB0aGUgc2VydmljZSByYXRlIGxpbWl0LiIiIgo=
+"""User-friendly error types for findmy-sound.
+
+These wrap the lower-level pyicloud/requests exceptions so that callers
+(cli.py and server.py in particular) only ever need to catch a small,
+stable set of exception types instead of reaching into pyicloud internals.
+"""
+
+from __future__ import annotations
+
+
+class FindMySoundError(Exception):
+    """Base class for all findmy-sound errors."""
+
+
+class AuthenticationError(FindMySoundError):
+    """Raised when Apple ID authentication fails (bad credentials)."""
+
+
+class TwoFactorRequiredError(FindMySoundError):
+    """Raised when the session requires a two-factor code the caller must supply."""
+
+
+class SessionExpiredError(FindMySoundError):
+    """Raised when a previously trusted session is no longer valid."""
+
+
+class DeviceNotFoundError(FindMySoundError):
+    """Raised when a requested device ID does not match any known device."""
+
+    def __init__(self, device_id: str) -> None:
+        super().__init__(f"No device found with ID: {device_id}")
+        self.device_id = device_id
+
+
+class AmbiguousDeviceNameError(FindMySoundError):
+    """Raised when a name-based lookup matches more than one device.
+
+    The caller must be forced to disambiguate with an explicit device ID;
+    this tool never guesses which device was meant.
+    """
+
+    def __init__(self, name: str, matching_ids: list[str]) -> None:
+        super().__init__(
+            f"Multiple devices match name '{name}'. "
+            f"Re-run with an explicit --device-id. Candidates: {', '.join(matching_ids)}"
+        )
+        self.name = name
+        self.matching_ids = matching_ids
+
+
+class SoundUnavailableError(FindMySoundError):
+    """Raised when the selected device does not support Play Sound."""
+
+    def __init__(self, device_id: str) -> None:
+        super().__init__(f"Play Sound is not available for device: {device_id}")
+        self.device_id = device_id
+
+
+class ServiceUnavailableError(FindMySoundError):
+    """Raised when Apple's Find My service is unreachable or not activated."""
+
+
+class MalformedResponseError(FindMySoundError):
+    """Raised when Apple returns a response this tool cannot parse safely."""
+
+
+class ProfileNotFoundError(FindMySoundError):
+    """Raised when a requested profile name has no configuration."""
+
+    def __init__(self, profile: str) -> None:
+        super().__init__(f"No profile configured with name: {profile}")
+        self.profile = profile
+
+
+class RateLimitedError(FindMySoundError):
+    """Raised when a ring request exceeds the service rate limit."""
