@@ -1,1 +1,177 @@
-IiIiUGVyLXByb2ZpbGUgYW5kIHNlcnZlciBjb25maWd1cmF0aW9uLgoKQSBwcm9maWxlIElTIGEgdXNlcjogb25lIEFwcGxlIElELCBvbmUgZGV2aWNlIGFsbG93bGlzdCwgb25lIHNlc3Npb24Kc3RvcmUgKGRhdGEgZGlyKS4gdjEgc2hpcHMgd2l0aCBhIHNpbmdsZSBwcm9maWxlIChOYXRlKTsgYWRkaW5nIGFub3RoZXIKdXNlciBtZWFucyBhZGRpbmcgYW5vdGhlciBwcm9maWxlIGZpbGUgYW5kIHJ1bm5pbmcgdGhlIHNhbWUgc2V0dXAKd29ya2Zsb3cgZm9yIHRoYXQgQXBwbGUgSUQg4oCUIG5vIGNvZGUgY2hhbmdlcy4gU2VlIFNFVFVQLm1kLgoKUHJvZmlsZSBmaWxlcyBsaXZlIGluIHRoZSBjb25maWcgZGlyIChkZWZhdWx0IH4vLmNvbmZpZy9maW5kbXktc291bmQpOgogIHJpbmctPHByb2ZpbGU+LmVudiAgIC0+IHByb2ZpbGUgIjxwcm9maWxlPiIKICByaW5nLmVudiAgICAgICAgICAgICAtPiBwcm9maWxlICJkZWZhdWx0IiAobGVnYWN5IHNpbmdsZS1kZXZpY2UgbGF5b3V0KQoKRWFjaCBmaWxlIGlzIGEgc2hlbGwtc3R5bGUgS0VZPXZhbHVlIGZpbGUgKHRoZSBzYW1lIGZvcm1hdCB0aGUKcmluZy1teS1kZXZpY2Uuc2ggd3JhcHBlciBzb3VyY2VzKToKICBBUFBMRV9JRD0ieW91QGljbG91ZC5jb20iCiAgREVWSUNFX0lEPSJhYmMxMjMuLi4iICAgICAgICAgICAgICMgc2luZ2xlIGRldmljZSwgb3IKICBERVZJQ0VfSURTPSJhYmMxMjMuLi4sZGVmNDU2Li4uIiAgIyBjb21tYS1zZXBhcmF0ZWQgYWxsb3dsaXN0CgpERVZJQ0VfSUQgYW5kIERFVklDRV9JRFMgY29tYmluZSBpbnRvIHRoZSBwcm9maWxlJ3MgYWxsb3dsaXN0LiBUaGUKc2VydmljZSBvbmx5IGV2ZXIgcmluZ3MgZGV2aWNlIElEcyBsaXN0ZWQgaW4gdGhlIHJlcXVlc3RpbmcgcHJvZmlsZSdzCmFsbG93bGlzdC4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQgb3MKZnJvbSBjb2xsZWN0aW9ucy5hYmMgaW1wb3J0IE1hcHBpbmcKZnJvbSBkYXRhY2xhc3NlcyBpbXBvcnQgZGF0YWNsYXNzCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKREVGQVVMVF9DT05GSUdfRElSID0gIn4vLmNvbmZpZy9maW5kbXktc291bmQiCkRFRkFVTFRfREFUQV9ESVIgPSAifi8ubG9jYWwvc3RhdGUvZmluZG15LXNvdW5kL3Nlc3Npb25zIgpERUZBVUxUX0hPU1QgPSAiMC4wLjAuMCIKREVGQVVMVF9QT1JUID0gODc2NQoKQkVBUkVSX1RPS0VOX0VOViA9ICJGSU5ETVlfQkVBUkVSX1RPS0VOIgpCSU5EX0VOViA9ICJGSU5ETVlfQklORCIKUE9SVF9FTlYgPSAiRklORE1ZX1BPUlQiCkRBVEFfRElSX0VOViA9ICJGSU5ETVlfREFUQV9ESVIiCgoKQGRhdGFjbGFzcyhmcm96ZW49VHJ1ZSkKY2xhc3MgUHJvZmlsZToKICAgICIiIk9uZSB1c2VyOiBBcHBsZSBJRCwgZGV2aWNlIGFsbG93bGlzdCwgYW5kIHNlc3Npb24gc3RvcmUuIiIiCgogICAgbmFtZTogc3RyCiAgICBhcHBsZV9pZDogc3RyCiAgICBkZXZpY2VfaWRzOiBmcm96ZW5zZXRbc3RyXQogICAgZGF0YV9kaXI6IHN0cgoKCkBkYXRhY2xhc3MKY2xhc3MgU2VydmVyQ29uZmlnOgogICAgIiIiRXZlcnl0aGluZyB0aGUgSFRUUCBzZXJ2aWNlIG5lZWRzIHRvIHN0YXJ0LiIiIgoKICAgIGhvc3Q6IHN0cgogICAgcG9ydDogaW50CiAgICBiZWFyZXJfdG9rZW46IHN0cgogICAgcHJvZmlsZXM6IGRpY3Rbc3RyLCBQcm9maWxlXQogICAgZGF0YV9kaXI6IHN0cgoKCmRlZiBwYXJzZV9lbnZfZmlsZShwYXRoOiBzdHIgfCBQYXRoKSAtPiBkaWN0W3N0ciwgc3RyXToKICAgICIiIlBhcnNlIGEgc2hlbGwtc3R5bGUgS0VZPXZhbHVlIGZpbGUuCgogICAgQmxhbmsgbGluZXMgYW5kIGAjYCBjb21tZW50cyBhcmUgc2tpcHBlZDsgYW4gb3B0aW9uYWwgYGV4cG9ydCBgCiAgICBwcmVmaXggaXMgYWNjZXB0ZWQ7IHZhbHVlcyBtYXkgYmUgc2luZ2xlLSBvciBkb3VibGUtcXVvdGVkLiBObwogICAgdmFyaWFibGUgZXhwYW5zaW9uIGlzIHBlcmZvcm1lZCDigJQgdmFsdWVzIGFyZSBsaXRlcmFsLgogICAgIiIiCiAgICB2YWx1ZXM6IGRpY3Rbc3RyLCBzdHJdID0ge30KICAgIGZvciBsaW5lbm8sIHJhdyBpbiBlbnVtZXJhdGUoCiAgICAgICAgUGF0aChwYXRoKS5yZWFkX3RleHQoZW5jb2Rpbmc9InV0Zi04Iikuc3BsaXRsaW5lcygpLCAxCiAgICApOgogICAgICAgIGxpbmUgPSByYXcuc3RyaXAoKQogICAgICAgIGlmIG5vdCBsaW5lIG9yIGxpbmUuc3RhcnRzd2l0aCgiIyIpOgogICAgICAgICAgICBjb250aW51ZQogICAgICAgIGlmIGxpbmUuc3RhcnRzd2l0aCgiZXhwb3J0ICIpOgogICAgICAgICAgICBsaW5lID0gbGluZVtsZW4oImV4cG9ydCAiKTpdLnN0cmlwKCkKICAgICAgICBpZiAiPSIgbm90IGluIGxpbmU6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoZiJ7cGF0aH06e2xpbmVub306IGV4cGVjdGVkIEtFWT12YWx1ZSwgZ290IHtyYXchcn0iKQogICAgICAgIGtleSwgXywgdmFsdWUgPSBsaW5lLnBhcnRpdGlvbigiPSIpCiAgICAgICAga2V5ID0ga2V5LnN0cmlwKCkKICAgICAgICB2YWx1ZSA9IHZhbHVlLnN0cmlwKCkKICAgICAgICBpZiBsZW4odmFsdWUpID49IDIgYW5kIHZhbHVlWzBdID09IHZhbHVlWy0xXSBhbmQgdmFsdWVbMF0gaW4gKCInIiwgJyInKToKICAgICAgICAgICAgdmFsdWUgPSB2YWx1ZVsxOi0xXQogICAgICAgIGlmIG5vdCBrZXk6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoZiJ7cGF0aH06e2xpbmVub306IGVtcHR5IGtleSIpCiAgICAgICAgdmFsdWVzW2tleV0gPSB2YWx1ZQogICAgcmV0dXJuIHZhbHVlcwoKCmRlZiBsb2FkX3Byb2ZpbGVzKAogICAgY29uZmlnX2Rpcjogc3RyIHwgUGF0aCwgZGF0YV9kaXI6IHN0ciB8IFBhdGgKKSAtPiBkaWN0W3N0ciwgUHJvZmlsZV06CiAgICAiIiJMb2FkIGV2ZXJ5IHByb2ZpbGUgZmlsZSBpbiBjb25maWdfZGlyLgoKICAgIGByaW5nLTxuYW1lPi5lbnZgIGRlZmluZXMgcHJvZmlsZSBgPG5hbWU+YDsgYHJpbmcuZW52YCBkZWZpbmVzCiAgICBwcm9maWxlICJkZWZhdWx0Ii4gQSBmaWxlIG1pc3NpbmcgQVBQTEVfSUQgb3IgYW55IGRldmljZSBJRCBpcyBhCiAgICBzdGFydHVwIGVycm9yIOKAlCBhIHNpbGVudGx5IGlnbm9yZWQgcHJvZmlsZSB3b3VsZCBtZWFuIGEgcGhvbmUgdGhhdAogICAgbmV2ZXIgcmluZ3MuCiAgICAiIiIKICAgIGNvbmZpZ19wYXRoID0gUGF0aChjb25maWdfZGlyKS5leHBhbmR1c2VyKCkKICAgIGJhc2VfZGF0YSA9IFBhdGgoZGF0YV9kaXIpLmV4cGFuZHVzZXIoKQogICAgY2FuZGlkYXRlcyA9IHNvcnRlZChjb25maWdfcGF0aC5nbG9iKCJyaW5nLSouZW52IikpCiAgICBsZWdhY3kgPSBjb25maWdfcGF0aCAvICJyaW5nLmVudiIKICAgIGlmIGxlZ2FjeS5pc19maWxlKCk6CiAgICAgICAgY2FuZGlkYXRlcyA9IFtsZWdhY3ldICsgY2FuZGlkYXRlcyAgIyBkZXRlcm1pbmlzdGljIG9yZGVyCiAgICBwcm9maWxlczogZGljdFtzdHIsIFByb2ZpbGVdID0ge30KICAgIGZvciBwYXRoIGluIGNhbmRpZGF0ZXM6CiAgICAgICAgbmFtZSA9ICgKICAgICAgICAgICAgImRlZmF1bHQiCiAgICAgICAgICAgIGlmIHBhdGgubmFtZSA9PSAicmluZy5lbnYiCiAgICAgICAgICAgIGVsc2UgcGF0aC5uYW1lW2xlbigicmluZy0iKTotbGVuKCIuZW52IildCiAgICAgICAgKQogICAgICAgIHZhbHVlcyA9IHBhcnNlX2Vudl9maWxlKHBhdGgpCiAgICAgICAgYXBwbGVfaWQgPSB2YWx1ZXMuZ2V0KCJBUFBMRV9JRCIsICIiKS5zdHJpcCgpCiAgICAgICAgaWYgbm90IGFwcGxlX2lkOgogICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKGYie3BhdGh9OiBBUFBMRV9JRCBpcyByZXF1aXJlZCIpCiAgICAgICAgaWRzOiBzZXRbc3RyXSA9IHNldCgpCiAgICAgICAgaWYgdmFsdWVzLmdldCgiREVWSUNFX0lEIiwgIiIpLnN0cmlwKCk6CiAgICAgICAgICAgIGlkcy5hZGQodmFsdWVzWyJERVZJQ0VfSUQiXS5zdHJpcCgpKQogICAgICAgIGZvciBpdGVtIGluIHZhbHVlcy5nZXQoIkRFVklDRV9JRFMiLCAiIikuc3BsaXQoIiwiKToKICAgICAgICAgICAgaXRlbSA9IGl0ZW0uc3RyaXAoKQogICAgICAgICAgICBpZiBpdGVtOgogICAgICAgICAgICAgICAgaWRzLmFkZChpdGVtKQogICAgICAgIGlmIG5vdCBpZHM6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoZiJ7cGF0aH06IHNldCBERVZJQ0VfSUQgb3IgREVWSUNFX0lEUyIpCiAgICAgICAgcHJvZmlsZXNbbmFtZV0gPSBQcm9maWxlKAogICAgICAgICAgICBuYW1lPW5hbWUsCiAgICAgICAgICAgIGFwcGxlX2lkPWFwcGxlX2lkLAogICAgICAgICAgICBkZXZpY2VfaWRzPWZyb3plbnNldChpZHMpLAogICAgICAgICAgICBkYXRhX2Rpcj1zdHIoYmFzZV9kYXRhIC8gbmFtZSksCiAgICAgICAgKQogICAgcmV0dXJuIHByb2ZpbGVzCgoKZGVmIGxvYWRfc2VydmVyX2NvbmZpZygKICAgICosCiAgICBjb25maWdfZGlyOiBzdHIgfCBOb25lID0gTm9uZSwKICAgIGRhdGFfZGlyOiBzdHIgfCBOb25lID0gTm9uZSwKICAgIGhvc3Q6IHN0ciB8IE5vbmUgPSBOb25lLAogICAgcG9ydDogaW50IHwgTm9uZSA9IE5vbmUsCiAgICBiZWFyZXJfdG9rZW46IHN0ciB8IE5vbmUgPSBOb25lLAogICAgZW52OiBNYXBwaW5nW3N0ciwgc3RyXSB8IE5vbmUgPSBOb25lLAopIC0+IFNlcnZlckNvbmZpZzoKICAgICIiIkJ1aWxkIHRoZSBzZXJ2ZXIgY29uZmlndXJhdGlvbiBmcm9tIGV4cGxpY2l0IGFyZ3MgYW5kIGVudiB2YXJzLgoKICAgIEV4cGxpY2l0IGFyZ3VtZW50cyB3aW4gb3ZlciBlbnYgdmFyczsgZW52IHZhcnMgd2luIG92ZXIgZGVmYXVsdHMuCiAgICBUaGUgYmVhcmVyIHRva2VuIGhhcyBubyBkZWZhdWx0IOKAlCB0aGUgc2VydmVyIHJlZnVzZXMgdG8gc3RhcnQKICAgIHdpdGhvdXQgb25lLgogICAgIiIiCiAgICBlbnYgPSBvcy5lbnZpcm9uIGlmIGVudiBpcyBOb25lIGVsc2UgZW52CiAgICB0b2tlbiA9IChiZWFyZXJfdG9rZW4gb3IgZW52LmdldChCRUFSRVJfVE9LRU5fRU5WKSBvciAiIikuc3RyaXAoKQogICAgaWYgbm90IHRva2VuOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoCiAgICAgICAgICAgICJObyBiZWFyZXIgdG9rZW4gY29uZmlndXJlZC4gU2V0IEZJTkRNWV9CRUFSRVJfVE9LRU4gIgogICAgICAgICAgICAiKGUuZy4gaW4gdGhlIHNlcnZpY2UgZW52IGZpbGUpIGJlZm9yZSBzdGFydGluZyB0aGUgc2VydmVyLiIKICAgICAgICApCiAgICBob3N0ID0gaG9zdCBvciBlbnYuZ2V0KEJJTkRfRU5WKSBvciBERUZBVUxUX0hPU1QKICAgIGlmIHBvcnQgaXMgTm9uZToKICAgICAgICBwb3J0ID0gaW50KGVudi5nZXQoUE9SVF9FTlYsIERFRkFVTFRfUE9SVCkpCiAgICByZXNvbHZlZF9jb25maWdfZGlyID0gUGF0aChjb25maWdfZGlyIG9yIERFRkFVTFRfQ09ORklHX0RJUikuZXhwYW5kdXNlcigpCiAgICByZXNvbHZlZF9kYXRhX2RpciA9IFBhdGgoCiAgICAgICAgZGF0YV9kaXIgb3IgZW52LmdldChEQVRBX0RJUl9FTlYpIG9yIERFRkFVTFRfREFUQV9ESVIKICAgICkuZXhwYW5kdXNlcigpCiAgICBwcm9maWxlcyA9IGxvYWRfcHJvZmlsZXMocmVzb2x2ZWRfY29uZmlnX2RpciwgcmVzb2x2ZWRfZGF0YV9kaXIpCiAgICBpZiBub3QgcHJvZmlsZXM6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigKICAgICAgICAgICAgZiJObyBwcm9maWxlcyBmb3VuZCBpbiB7cmVzb2x2ZWRfY29uZmlnX2Rpcn0uICIKICAgICAgICAgICAgIkNyZWF0ZSByaW5nLTxwcm9maWxlPi5lbnYgKHNlZSBTRVRVUC5tZCkuIgogICAgICAgICkKICAgIHJldHVybiBTZXJ2ZXJDb25maWcoCiAgICAgICAgaG9zdD1ob3N0LAogICAgICAgIHBvcnQ9cG9ydCwKICAgICAgICBiZWFyZXJfdG9rZW49dG9rZW4sCiAgICAgICAgcHJvZmlsZXM9cHJvZmlsZXMsCiAgICAgICAgZGF0YV9kaXI9c3RyKHJlc29sdmVkX2RhdGFfZGlyKSwKICAgICkK
+"""Per-profile and server configuration.
+
+A profile IS a user: one Apple ID, one device allowlist, one session
+store (data dir). v1 ships with a single profile (Nate); adding another
+user means adding another profile file and running the same setup
+workflow for that Apple ID — no code changes. See SETUP.md.
+
+Profile files live in the config dir (default ~/.config/findmy-sound):
+  ring-<profile>.env   -> profile "<profile>"
+  ring.env             -> profile "default" (legacy single-device layout)
+
+Each file is a shell-style KEY=value file (the same format the
+ring-my-device.sh wrapper sources):
+  APPLE_ID="you@icloud.com"
+  DEVICE_ID="abc123..."             # single device, or
+  DEVICE_IDS="abc123...,def456..."  # comma-separated allowlist
+
+DEVICE_ID and DEVICE_IDS combine into the profile's allowlist. The
+service only ever rings device IDs listed in the requesting profile's
+allowlist.
+"""
+
+from __future__ import annotations
+
+import os
+from collections.abc import Mapping
+from dataclasses import dataclass
+from pathlib import Path
+
+DEFAULT_CONFIG_DIR = "~/.config/findmy-sound"
+DEFAULT_DATA_DIR = "~/.local/state/findmy-sound/sessions"
+DEFAULT_HOST = "0.0.0.0"
+DEFAULT_PORT = 8765
+
+BEARER_TOKEN_ENV = "FINDMY_BEARER_TOKEN"
+BIND_ENV = "FINDMY_BIND"
+PORT_ENV = "FINDMY_PORT"
+DATA_DIR_ENV = "FINDMY_DATA_DIR"
+
+
+@dataclass(frozen=True)
+class Profile:
+    """One user: Apple ID, device allowlist, and session store."""
+
+    name: str
+    apple_id: str
+    device_ids: frozenset[str]
+    data_dir: str
+
+
+@dataclass
+class ServerConfig:
+    """Everything the HTTP service needs to start."""
+
+    host: str
+    port: int
+    bearer_token: str
+    profiles: dict[str, Profile]
+    data_dir: str
+
+
+def parse_env_file(path: str | Path) -> dict[str, str]:
+    """Parse a shell-style KEY=value file.
+
+    Blank lines and `#` comments are skipped; an optional `export `
+    prefix is accepted; values may be single- or double-quoted. No
+    variable expansion is performed — values are literal.
+    """
+    values: dict[str, str] = {}
+    for lineno, raw in enumerate(
+        Path(path).read_text(encoding="utf-8").splitlines(), 1
+    ):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):].strip()
+        if "=" not in line:
+            raise ValueError(f"{path}:{lineno}: expected KEY=value, got {raw!r}")
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
+            value = value[1:-1]
+        if not key:
+            raise ValueError(f"{path}:{lineno}: empty key")
+        values[key] = value
+    return values
+
+
+def load_profiles(
+    config_dir: str | Path, data_dir: str | Path
+) -> dict[str, Profile]:
+    """Load every profile file in config_dir.
+
+    `ring-<name>.env` defines profile `<name>`; `ring.env` defines
+    profile "default". A file missing APPLE_ID or any device ID is a
+    startup error — a silently ignored profile would mean a phone that
+    never rings.
+    """
+    config_path = Path(config_dir).expanduser()
+    base_data = Path(data_dir).expanduser()
+    candidates = sorted(config_path.glob("ring-*.env"))
+    legacy = config_path / "ring.env"
+    if legacy.is_file():
+        candidates = [legacy] + candidates  # deterministic order
+    profiles: dict[str, Profile] = {}
+    for path in candidates:
+        name = (
+            "default"
+            if path.name == "ring.env"
+            else path.name[len("ring-"):-len(".env")]
+        )
+        values = parse_env_file(path)
+        apple_id = values.get("APPLE_ID", "").strip()
+        if not apple_id:
+            raise ValueError(f"{path}: APPLE_ID is required")
+        ids: set[str] = set()
+        if values.get("DEVICE_ID", "").strip():
+            ids.add(values["DEVICE_ID"].strip())
+        for item in values.get("DEVICE_IDS", "").split(","):
+            item = item.strip()
+            if item:
+                ids.add(item)
+        if not ids:
+            raise ValueError(f"{path}: set DEVICE_ID or DEVICE_IDS")
+        profiles[name] = Profile(
+            name=name,
+            apple_id=apple_id,
+            device_ids=frozenset(ids),
+            data_dir=str(base_data / name),
+        )
+    return profiles
+
+
+def load_server_config(
+    *,
+    config_dir: str | None = None,
+    data_dir: str | None = None,
+    host: str | None = None,
+    port: int | None = None,
+    bearer_token: str | None = None,
+    env: Mapping[str, str] | None = None,
+) -> ServerConfig:
+    """Build the server configuration from explicit args and env vars.
+
+    Explicit arguments win over env vars; env vars win over defaults.
+    The bearer token has no default — the server refuses to start
+    without one.
+    """
+    env = os.environ if env is None else env
+    token = (bearer_token or env.get(BEARER_TOKEN_ENV) or "").strip()
+    if not token:
+        raise ValueError(
+            "No bearer token configured. Set FINDMY_BEARER_TOKEN "
+            "(e.g. in the service env file) before starting the server."
+        )
+    host = host or env.get(BIND_ENV) or DEFAULT_HOST
+    if port is None:
+        port = int(env.get(PORT_ENV, DEFAULT_PORT))
+    resolved_config_dir = Path(config_dir or DEFAULT_CONFIG_DIR).expanduser()
+    resolved_data_dir = Path(
+        data_dir or env.get(DATA_DIR_ENV) or DEFAULT_DATA_DIR
+    ).expanduser()
+    profiles = load_profiles(resolved_config_dir, resolved_data_dir)
+    if not profiles:
+        raise ValueError(
+            f"No profiles found in {resolved_config_dir}. "
+            "Create ring-<profile>.env (see SETUP.md)."
+        )
+    return ServerConfig(
+        host=host,
+        port=port,
+        bearer_token=token,
+        profiles=profiles,
+        data_dir=str(resolved_data_dir),
+    )
