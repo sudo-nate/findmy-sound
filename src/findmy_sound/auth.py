@@ -1,1 +1,229 @@
-IiIiQXV0aGVudGljYXRpb24gYW5kIHNlc3Npb24gaGFuZGxpbmcuCgpUaGlzIG1vZHVsZSBpcyB0aGUgb25seSBwbGFjZSB0aGF0IGNvbnN0cnVjdHMgYSBweWljbG91ZC5QeWlDbG91ZFNlcnZpY2UuCkl0IGlzIHJlc3BvbnNpYmxlIGZvcjoKICAtIHJlc29sdmluZyB0aGUgQXBwbGUgSUQgcGFzc3dvcmQgZnJvbSBhIHBsdWdnYWJsZSBzb3VyY2UgKGVudiB2YXIsCiAgICAwNjAwIHNlY3JldHMgZmlsZSwgT1Mga2V5Y2hhaW4sIG9yIGFuIGludGVyYWN0aXZlIHByb21wdCkKICAtIGRyaXZpbmcgdGhlIDJGQSBjaGFsbGVuZ2UvcmVzcG9uc2UgbG9vcAogIC0gbmV2ZXIgbG9nZ2luZyBvciBwcmludGluZyBwYXNzd29yZHMsIGNvb2tpZXMsIHRva2Vucywgb3IgZnVsbAogICAgYXV0aGVudGljYXRpb24gcmVzcG9uc2UgYm9kaWVzCgpTZXNzaW9uL2Nvb2tpZSBmaWxlcyBhcmUgbWFuYWdlZCBieSBweWljbG91ZCBpdHNlbGYsIHdoaWNoIGNyZWF0ZXMgaXRzCmNvb2tpZSBkaXJlY3Rvcnkgd2l0aCBhIHJlc3RyaWN0aXZlIHVtYXNrICgwbzA3Nykgc28gZmlsZXMgYXJlIG5vdAp3b3JsZC0gb3IgZ3JvdXAtcmVhZGFibGUuIEJ5IGRlZmF1bHQgcHlpY2xvdWQgdXNlcyBhIHRlbXAgZGlyZWN0b3J5IGZvcgpjb29raWVzOyBwYXNzIGFuIGV4cGxpY2l0IGRhdGFfZGlyIChvciBzZXQgRklORE1ZX0RBVEFfRElSKSBzbyB0aGUKdHJ1c3RlZCBzZXNzaW9uIHN1cnZpdmVzIHJlc3RhcnRzIGFuZCBsaXZlcyBpbiBhIGtub3duIHBsYWNlLgoKTm8gcGFzc3dvcmQgaXMgc3RvcmVkIGF0IHJlc3QgYnkgZGVmYXVsdC4gV2l0aCBhIHZhbGlkIHRydXN0ZWQgc2Vzc2lvbgppbiB0aGUgZGF0YSBkaXIsIGxvZ2luIG5lZWRzIG5vIHBhc3N3b3JkIGF0IGFsbCDigJQgcHlpY2xvdWQgdmFsaWRhdGVzCnRoZSBzdG9yZWQgc2Vzc2lvbiB0b2tlbi4gVGhlIHBhc3N3b3JkIGlzIG9ubHkgcmVxdWlyZWQgd2hlbiB0aGUKc2Vzc2lvbiBoYXMgZXhwaXJlZCwgYW5kIHRoZW4gaXQgaXMgcmVzb2x2ZWQgYXQgKHJlLSlhdXRoIHRpbWUuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGdldHBhc3MKaW1wb3J0IGxvZ2dpbmcKaW1wb3J0IG9zCmltcG9ydCBzdGF0CmZyb20gdHlwaW5nIGltcG9ydCBDYWxsYWJsZSwgT3B0aW9uYWwKCmZyb20gcHlpY2xvdWQgaW1wb3J0IFB5aUNsb3VkU2VydmljZQpmcm9tIHB5aWNsb3VkLmV4Y2VwdGlvbnMgaW1wb3J0ICgKICAgIFB5aUNsb3VkQVBJUmVzcG9uc2VFeGNlcHRpb24sCiAgICBQeWlDbG91ZEZhaWxlZExvZ2luRXhjZXB0aW9uLAopCmZyb20gcHlpY2xvdWQudXRpbHMgaW1wb3J0IGdldF9wYXNzd29yZF9mcm9tX2tleXJpbmcsIHN0b3JlX3Bhc3N3b3JkX2luX2tleXJpbmcKCmZyb20gZmluZG15X3NvdW5kLmVycm9ycyBpbXBvcnQgQXV0aGVudGljYXRpb25FcnJvciwgVHdvRmFjdG9yUmVxdWlyZWRFcnJvcgoKX0xPR0dFUiA9IGxvZ2dpbmcuZ2V0TG9nZ2VyKF9fbmFtZV9fKQoKIyBQcm9tcHQgY2FsbGJhY2sgdHlwZTogZ2l2ZW4gYSBwcm9tcHQgc3RyaW5nLCByZXR1cm4gdGhlIHVzZXIncyBhbnN3ZXIuClByb21wdEZuID0gQ2FsbGFibGVbW3N0cl0sIHN0cl0KCiMgRW52IHZhciBob2xkaW5nIHRoZSBBcHBsZSBJRCBwYXNzd29yZCwgd2hlbiB0aGUgZW52IGNyZWRlbnRpYWwgc291cmNlCiMgaXMgdXNlZC4gT25seSByZWFkIGF0IChyZS0pYXV0aCB0aW1lLCBuZXZlciBsb2dnZWQuClBBU1NXT1JEX0VOVl9WQVIgPSAiRklORE1ZX1BBU1NXT1JEIgojIEVudiB2YXIgaG9sZGluZyB0aGUgYmFzZSBkaXJlY3RvcnkgZm9yIHB5aWNsb3VkIHNlc3Npb24vY29va2llIGRhdGEuCkRBVEFfRElSX0VOVl9WQVIgPSAiRklORE1ZX0RBVEFfRElSIgoKUEFTU1dPUkRfU09VUkNFUyA9ICgiYXV0byIsICJlbnYiLCAiZmlsZSIsICJrZXlyaW5nIiwgInByb21wdCIpCgoKZGVmIGRlZmF1bHRfY29kZV9wcm9tcHQocHJvbXB0OiBzdHIpIC0+IHN0cjoKICAgICIiIkRlZmF1bHQgMkZBIGNvZGUgcHJvbXB0IHVzaW5nIHBsYWluIGlucHV0KCkuCgogICAgSWYgdGhlcmUncyBubyBpbnRlcmFjdGl2ZSBzdGRpbiAoZS5nLiBpbnZva2VkIGhlYWRsZXNzbHkgZnJvbSBhIFNpcmkKICAgIFNob3J0Y3V0LCBsYXVuY2hkIGpvYiwgb3IgYSBwaHlzaWNhbCBidXR0b24pLCBpbnB1dCgpIHJhaXNlcyBFT0ZFcnJvcgogICAgaW5zdGVhZCBvZiBoYW5naW5nIGZvcmV2ZXIuIFRyZWF0IHRoYXQgdGhlIHNhbWUgYXMgYW4gZW1wdHkgYW5zd2VyIHNvCiAgICB0aGUgY2FsbGVyIGdldHMgYSBjbGVhbiBUd29GYWN0b3JSZXF1aXJlZEVycm9yIGluc3RlYWQgb2YgYSB0cmFjZWJhY2suCiAgICAiIiIKICAgIHRyeToKICAgICAgICByZXR1cm4gaW5wdXQocHJvbXB0KS5zdHJpcCgpCiAgICBleGNlcHQgRU9GRXJyb3I6CiAgICAgICAgcmV0dXJuICIiCgoKZGVmIHJlc29sdmVfcGFzc3dvcmQoCiAgICBhcHBsZV9pZDogc3RyLAogICAgc291cmNlOiBzdHIgPSAiYXV0byIsCiAgICAqLAogICAgcGFzc3dvcmQ6IE9wdGlvbmFsW3N0cl0gPSBOb25lLAogICAgcGFzc3dvcmRfZmlsZTogT3B0aW9uYWxbc3RyXSA9IE5vbmUsCiAgICBlbnZfdmFyOiBzdHIgPSBQQVNTV09SRF9FTlZfVkFSLAopIC0+IE9wdGlvbmFsW3N0cl06CiAgICAiIiJSZXNvbHZlIGFuIEFwcGxlIElEIHBhc3N3b3JkIGZyb20gdGhlIGNvbmZpZ3VyZWQgc291cmNlLgoKICAgIFNvdXJjZXM6ICJhdXRvIiAoZW52IHZhciwgdGhlbiBrZXljaGFpbiksICJlbnYiIChlbnYgdmFyIG9ubHkpLAogICAgImZpbGUiIChhIDA2MDAgc2VjcmV0cyBmaWxlKSwgImtleXJpbmciIChPUyBrZXljaGFpbiBvbmx5KSwKICAgICJwcm9tcHQiIChubyBzb3VyY2Ug4oCUIHRoZSBjYWxsZXIgcHJvbXB0cywgb3IgZmFpbHMgY2xlYW5seSB3aGVuCiAgICBub24taW50ZXJhY3RpdmUpLiBBbiBleHBsaWNpdGx5IHBhc3NlZCBwYXNzd29yZCBhbHdheXMgd2lucy4KCiAgICBSZXR1cm5zIE5vbmUgd2hlbiBubyBzb3VyY2UgeWllbGRzIGEgcGFzc3dvcmQuIE5ldmVyIGxvZ3MgaXQuCiAgICAiIiIKICAgIGlmIHBhc3N3b3JkIGlzIG5vdCBOb25lOgogICAgICAgIHJldHVybiBwYXNzd29yZAogICAgaWYgc291cmNlIG5vdCBpbiBQQVNTV09SRF9TT1VSQ0VTOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoCiAgICAgICAgICAgIGYiVW5rbm93biBwYXNzd29yZCBzb3VyY2U6IHtzb3VyY2Uhcn0gIgogICAgICAgICAgICBmIihleHBlY3RlZCBvbmUgb2YgeycsICcuam9pbihQQVNTV09SRF9TT1VSQ0VTKX0pIgogICAgICAgICkKICAgIGlmIHNvdXJjZSA9PSAiZW52IjoKICAgICAgICByZXR1cm4gb3MuZW52aXJvbi5nZXQoZW52X3Zhcikgb3IgTm9uZQogICAgaWYgc291cmNlID09ICJmaWxlIjoKICAgICAgICBpZiBub3QgcGFzc3dvcmRfZmlsZToKICAgICAgICAgICAgcmFpc2UgQXV0aGVudGljYXRpb25FcnJvcigKICAgICAgICAgICAgICAgICJQYXNzd29yZCBzb3VyY2UgJ2ZpbGUnIHJlcXVpcmVzIGEgcGFzc3dvcmQgZmlsZSBwYXRoLiIKICAgICAgICAgICAgKQogICAgICAgIHJldHVybiBfcmVhZF9wYXNzd29yZF9maWxlKHBhc3N3b3JkX2ZpbGUpCiAgICBpZiBzb3VyY2UgPT0gImtleXJpbmciOgogICAgICAgIHJldHVybiBnZXRfcGFzc3dvcmRfZnJvbV9rZXlyaW5nKGFwcGxlX2lkKQogICAgaWYgc291cmNlID09ICJwcm9tcHQiOgogICAgICAgIHJldHVybiBOb25lCiAgICAjIGF1dG86IGVudiB2YXIgZmlyc3QsIHRoZW4ga2V5Y2hhaW4sIHRoZW4gbm90aGluZy4KICAgIHJldHVybiBvcy5lbnZpcm9uLmdldChlbnZfdmFyKSBvciBnZXRfcGFzc3dvcmRfZnJvbV9rZXlyaW5nKGFwcGxlX2lkKQoKCmRlZiBfcmVhZF9wYXNzd29yZF9maWxlKHBhdGg6IHN0cikgLT4gc3RyOgogICAgIiIiUmVhZCBhIHBhc3N3b3JkIGZyb20gYSBzZWNyZXRzIGZpbGUuCgogICAgVGhlIGZpbGUgc2hvdWxkIGNvbnRhaW4ganVzdCB0aGUgcGFzc3dvcmQgKHBsdXMgYSB0cmFpbGluZwogICAgbmV3bGluZSkgYW5kIGJlIG1vZGUgMDYwMC4gQSBsb29zZXIgbW9kZSBvbmx5IGVhcm5zIGEgd2FybmluZyDigJQKICAgIHRoZSBmaWxlIGlzIHN0aWxsIHJlYWQg4oCUIHNvIG9wZXJhdG9ycyBhcmUgbm90IGxvY2tlZCBvdXQgYnkgYW4KICAgIGFjY2lkZW50YWwgY2htb2QsIGJ1dCB0aGUgbWlzY29uZmlndXJhdGlvbiBpcyB2aXNpYmxlIGluIGxvZ3MuCiAgICAiIiIKICAgIHRyeToKICAgICAgICB3aXRoIG9wZW4ocGF0aCwgInIiLCBlbmNvZGluZz0idXRmLTgiKSBhcyBoYW5kbGU6CiAgICAgICAgICAgIGNvbnRlbnQgPSBoYW5kbGUucmVhZCgpCiAgICBleGNlcHQgT1NFcnJvciBhcyBleGM6CiAgICAgICAgcmFpc2UgQXV0aGVudGljYXRpb25FcnJvcigKICAgICAgICAgICAgZiJDb3VsZCBub3QgcmVhZCBwYXNzd29yZCBmaWxlIHtwYXRofToge2V4Y30iCiAgICAgICAgKSBmcm9tIGV4YwogICAgbW9kZSA9IHN0YXQuU19JTU9ERShvcy5zdGF0KHBhdGgpLnN0X21vZGUpCiAgICBpZiBtb2RlICYgMG8wNzc6CiAgICAgICAgX0xPR0dFUi53YXJuaW5nKAogICAgICAgICAgICAiUGFzc3dvcmQgZmlsZSAlcyBpcyByZWFkYWJsZSBieSBncm91cC9vdGhlciAobW9kZSAlbyk7ICIKICAgICAgICAgICAgIml0IHNob3VsZCBiZSAwNjAwLiIsCiAgICAgICAgICAgIHBhdGgsCiAgICAgICAgICAgIG1vZGUsCiAgICAgICAgKQogICAgcGFzc3dvcmQgPSBjb250ZW50LnN0cmlwKCkKICAgIGlmIG5vdCBwYXNzd29yZDoKICAgICAgICByYWlzZSBBdXRoZW50aWNhdGlvbkVycm9yKGYiUGFzc3dvcmQgZmlsZSB7cGF0aH0gaXMgZW1wdHkuIikKICAgIHJldHVybiBwYXNzd29yZAoKCmRlZiBsb2dpbigKICAgIGFwcGxlX2lkOiBzdHIsCiAgICAqLAogICAgcGFzc3dvcmQ6IE9wdGlvbmFsW3N0cl0gPSBOb25lLAogICAgc2F2ZV9wYXNzd29yZDogT3B0aW9uYWxbYm9vbF0gPSBOb25lLAogICAgY29kZV9wcm9tcHQ6IFByb21wdEZuID0gZGVmYXVsdF9jb2RlX3Byb21wdCwKICAgIGludGVyYWN0aXZlOiBib29sID0gVHJ1ZSwKICAgIGRhdGFfZGlyOiBPcHRpb25hbFtzdHJdID0gTm9uZSwKICAgIHBhc3N3b3JkX3NvdXJjZTogc3RyID0gImF1dG8iLAogICAgcGFzc3dvcmRfZmlsZTogT3B0aW9uYWxbc3RyXSA9IE5vbmUsCikgLT4gUHlpQ2xvdWRTZXJ2aWNlOgogICAgIiIiQXV0aGVudGljYXRlIHRvIGlDbG91ZCBhbmQgcmV0dXJuIGEgcmVhZHktdG8tdXNlIFB5aUNsb3VkU2VydmljZS4KCiAgICBOZXZlciBsb2dzIG9yIHJldHVybnMgdGhlIHJhdyBwYXNzd29yZC4gUmFpc2VzIEF1dGhlbnRpY2F0aW9uRXJyb3Igb24KICAgIGJhZCBjcmVkZW50aWFscyBhbmQgVHdvRmFjdG9yUmVxdWlyZWRFcnJvciB3aGVuIGEgMkZBIGNvZGUgaXMgbmVlZGVkCiAgICBidXQgY2Fubm90IGJlIG9idGFpbmVkIChub24taW50ZXJhY3RpdmUgbW9kZSBuZXZlciBwcm9tcHRzIOKAlCBpdAogICAgZmFpbHMgY2xlYW5seSBpbnN0ZWFkKS4KCiAgICBXaXRoIGEgdmFsaWQgdHJ1c3RlZCBzZXNzaW9uIGluIHRoZSBkYXRhIGRpciwgbm8gcGFzc3dvcmQgaXMgbmVlZGVkOgogICAgcHlpY2xvdWQgdmFsaWRhdGVzIHRoZSBzdG9yZWQgc2Vzc2lvbiB0b2tlbi4gYHNhdmVfcGFzc3dvcmRgCiAgICBkZWZhdWx0cyB0byBUcnVlIHdoZW4gaW50ZXJhY3RpdmUgYW5kIEZhbHNlIG90aGVyd2lzZSwgc28gdGhlCiAgICBzZXJ2aWNlIHBhdGggbmV2ZXIgc3RvcmVzIGFueXRoaW5nIGF0IHJlc3QuCiAgICAiIiIKICAgIGlmIGRhdGFfZGlyIGlzIE5vbmU6CiAgICAgICAgZGF0YV9kaXIgPSBvcy5lbnZpcm9uLmdldChEQVRBX0RJUl9FTlZfVkFSKSBvciBOb25lCiAgICBwYXNzd29yZCA9IHJlc29sdmVfcGFzc3dvcmQoCiAgICAgICAgYXBwbGVfaWQsCiAgICAgICAgcGFzc3dvcmRfc291cmNlLAogICAgICAgIHBhc3N3b3JkPXBhc3N3b3JkLAogICAgICAgIHBhc3N3b3JkX2ZpbGU9cGFzc3dvcmRfZmlsZSwKICAgICkKICAgIGlmIHBhc3N3b3JkIGlzIE5vbmUgYW5kIGludGVyYWN0aXZlOgogICAgICAgIHBhc3N3b3JkID0gZ2V0cGFzcy5nZXRwYXNzKGYiQXBwbGUgSUQgcGFzc3dvcmQgZm9yIHthcHBsZV9pZH06ICIpCiAgICBpZiBzYXZlX3Bhc3N3b3JkIGlzIE5vbmU6CiAgICAgICAgc2F2ZV9wYXNzd29yZCA9IGludGVyYWN0aXZlCgogICAga3dhcmdzOiBkaWN0ID0ge30KICAgIGlmIGRhdGFfZGlyIGlzIG5vdCBOb25lOgogICAgICAgIGt3YXJnc1siY29va2llX2RpcmVjdG9yeSJdID0gZGF0YV9kaXIKICAgIHRyeToKICAgICAgICBzZXJ2aWNlID0gUHlpQ2xvdWRTZXJ2aWNlKGFwcGxlX2lkLCBwYXNzd29yZCwgKiprd2FyZ3MpCiAgICBleGNlcHQgUHlpQ2xvdWRGYWlsZWRMb2dpbkV4Y2VwdGlvbiBhcyBleGM6CiAgICAgICAgcmFpc2UgQXV0aGVudGljYXRpb25FcnJvcigKICAgICAgICAgICAgIkludmFsaWQgQXBwbGUgSUQgb3IgcGFzc3dvcmQuIFBsZWFzZSB0cnkgYWdhaW4uIgogICAgICAgICkgZnJvbSBleGMKCiAgICAjIFB5aUNsb3VkU2VydmljZSBzd2FsbG93cyB0aGUgMkZBLXJlcXVpcmVkIGV4Y2VwdGlvbiBpbnRlcm5hbGx5IGFuZAogICAgIyBpbnN0ZWFkIGV4cG9zZXMgaXQgdmlhIHRoZSByZXF1aXJlc18yZmEgcHJvcGVydHksIHNvIHdlIG11c3QgY2hlY2sKICAgICMgZm9yIGl0IGV4cGxpY2l0bHkgcmF0aGVyIHRoYW4gcmVseWluZyBvbiBhIHJhaXNlZCBleGNlcHRpb24uCiAgICBpZiBzZXJ2aWNlLnJlcXVpcmVzXzJmYToKICAgICAgICBpZiBpbnRlcmFjdGl2ZToKICAgICAgICAgICAgX2hhbmRsZV8yZmEoc2VydmljZSwgY29kZV9wcm9tcHQpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgcmFpc2UgVHdvRmFjdG9yUmVxdWlyZWRFcnJvcigKICAgICAgICAgICAgICAgICJBIHR3by1mYWN0b3IgYXV0aGVudGljYXRpb24gY29kZSBpcyByZXF1aXJlZCB0byBjb250aW51ZS4gIgogICAgICAgICAgICAgICAgIlJlLWF1dGhlbnRpY2F0ZSBpbnRlcmFjdGl2ZWx5IChzZWUgU0VUVVAubWQpLiIKICAgICAgICAgICAgKQoKICAgIGlmIHNhdmVfcGFzc3dvcmQgYW5kIHBhc3N3b3JkIGlzIG5vdCBOb25lOgogICAgICAgIHRyeToKICAgICAgICAgICAgc3RvcmVfcGFzc3dvcmRfaW5fa2V5cmluZyhhcHBsZV9pZCwgcGFzc3dvcmQpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjogICMgcHJhZ21hOiBubyBjb3ZlciAtIGtleXJpbmcgYmFja2VuZCBpc3N1ZXMKICAgICAgICAgICAgX0xPR0dFUi5kZWJ1ZygKICAgICAgICAgICAgICAgICJDb3VsZCBub3Qgc2F2ZSBwYXNzd29yZCB0byBPUyBrZXljaGFpbjsgIgogICAgICAgICAgICAgICAgInlvdSBtYXkgYmUgcHJvbXB0ZWQgYWdhaW4gbmV4dCB0aW1lLiIKICAgICAgICAgICAgKQoKICAgIHJldHVybiBzZXJ2aWNlCgoKZGVmIF9oYW5kbGVfMmZhKHNlcnZpY2U6IFB5aUNsb3VkU2VydmljZSwgY29kZV9wcm9tcHQ6IFByb21wdEZuKSAtPiBOb25lOgogICAgIiIiRHJpdmUgdGhlIGludGVyYWN0aXZlIHR3by1mYWN0b3IgYXV0aGVudGljYXRpb24gY2hhbGxlbmdlLiIiIgogICAgY29kZSA9IGNvZGVfcHJvbXB0KAogICAgICAgICJUd28tZmFjdG9yIGF1dGhlbnRpY2F0aW9uIHJlcXVpcmVkLiAiCiAgICAgICAgIkVudGVyIHRoZSBjb2RlIHNlbnQgdG8geW91ciB0cnVzdGVkIGRldmljZTogIgogICAgKQogICAgaWYgbm90IGNvZGU6CiAgICAgICAgcmFpc2UgVHdvRmFjdG9yUmVxdWlyZWRFcnJvcigKICAgICAgICAgICAgIkEgdHdvLWZhY3RvciBhdXRoZW50aWNhdGlvbiBjb2RlIGlzIHJlcXVpcmVkIHRvIGNvbnRpbnVlLiIKICAgICAgICApCgogICAgdHJ5OgogICAgICAgIHZhbGlkID0gc2VydmljZS52YWxpZGF0ZV8yZmFfY29kZShjb2RlKQogICAgZXhjZXB0IFB5aUNsb3VkQVBJUmVzcG9uc2VFeGNlcHRpb24gYXMgZXhjOgogICAgICAgIHJhaXNlIEF1dGhlbnRpY2F0aW9uRXJyb3IoCiAgICAgICAgICAgICJGYWlsZWQgdG8gdmFsaWRhdGUgdGhlIHR3by1mYWN0b3IgYXV0aGVudGljYXRpb24gY29kZS4iCiAgICAgICAgKSBmcm9tIGV4YwoKICAgIGlmIG5vdCB2YWxpZDoKICAgICAgICByYWlzZSBBdXRoZW50aWNhdGlvbkVycm9yKCJJbmNvcnJlY3QgdHdvLWZhY3RvciBhdXRoZW50aWNhdGlvbiBjb2RlLiIpCgogICAgIyBUcnVzdCB0aGlzIHNlc3Npb24gc28gc3Vic2VxdWVudCBydW5zIHJldXNlIGl0IHdpdGhvdXQgcmUtcHJvbXB0aW5nLgogICAgc2VydmljZS50cnVzdF9zZXNzaW9uKCkK
+"""Authentication and session handling.
+
+This module is the only place that constructs a pyicloud.PyiCloudService.
+It is responsible for:
+  - resolving the Apple ID password from a pluggable source (env var,
+    0600 secrets file, OS keychain, or an interactive prompt)
+  - driving the 2FA challenge/response loop
+  - never logging or printing passwords, cookies, tokens, or full
+    authentication response bodies
+
+Session/cookie files are managed by pyicloud itself, which creates its
+cookie directory with a restrictive umask (0o077) so files are not
+world- or group-readable. By default pyicloud uses a temp directory for
+cookies; pass an explicit data_dir (or set FINDMY_DATA_DIR) so the
+trusted session survives restarts and lives in a known place.
+
+No password is stored at rest by default. With a valid trusted session
+in the data dir, login needs no password at all — pyicloud validates
+the stored session token. The password is only required when the
+session has expired, and then it is resolved at (re-)auth time.
+"""
+
+from __future__ import annotations
+
+import getpass
+import logging
+import os
+import stat
+from typing import Callable, Optional
+
+from pyicloud import PyiCloudService
+from pyicloud.exceptions import (
+    PyiCloudAPIResponseException,
+    PyiCloudFailedLoginException,
+)
+from pyicloud.utils import get_password_from_keyring, store_password_in_keyring
+
+from findmy_sound.errors import AuthenticationError, TwoFactorRequiredError
+
+_LOGGER = logging.getLogger(__name__)
+
+# Prompt callback type: given a prompt string, return the user's answer.
+PromptFn = Callable[[str], str]
+
+# Env var holding the Apple ID password, when the env credential source
+# is used. Only read at (re-)auth time, never logged.
+PASSWORD_ENV_VAR = "FINDMY_PASSWORD"
+# Env var holding the base directory for pyicloud session/cookie data.
+DATA_DIR_ENV_VAR = "FINDMY_DATA_DIR"
+
+PASSWORD_SOURCES = ("auto", "env", "file", "keyring", "prompt")
+
+
+def default_code_prompt(prompt: str) -> str:
+    """Default 2FA code prompt using plain input().
+
+    If there's no interactive stdin (e.g. invoked headlessly from a Siri
+    Shortcut, launchd job, or a physical button), input() raises EOFError
+    instead of hanging forever. Treat that the same as an empty answer so
+    the caller gets a clean TwoFactorRequiredError instead of a traceback.
+    """
+    try:
+        return input(prompt).strip()
+    except EOFError:
+        return ""
+
+
+def resolve_password(
+    apple_id: str,
+    source: str = "auto",
+    *,
+    password: Optional[str] = None,
+    password_file: Optional[str] = None,
+    env_var: str = PASSWORD_ENV_VAR,
+) -> Optional[str]:
+    """Resolve an Apple ID password from the configured source.
+
+    Sources: "auto" (env var, then keychain), "env" (env var only),
+    "file" (a 0600 secrets file), "keyring" (OS keychain only),
+    "prompt" (no source — the caller prompts, or fails cleanly when
+    non-interactive). An explicitly passed password always wins.
+
+    Returns None when no source yields a password. Never logs it.
+    """
+    if password is not None:
+        return password
+    if source not in PASSWORD_SOURCES:
+        raise ValueError(
+            f"Unknown password source: {source!r} "
+            f"(expected one of {', '.join(PASSWORD_SOURCES)})"
+        )
+    if source == "env":
+        return os.environ.get(env_var) or None
+    if source == "file":
+        if not password_file:
+            raise AuthenticationError(
+                "Password source 'file' requires a password file path."
+            )
+        return _read_password_file(password_file)
+    if source == "keyring":
+        return get_password_from_keyring(apple_id)
+    if source == "prompt":
+        return None
+    # auto: env var first, then keychain, then nothing.
+    return os.environ.get(env_var) or get_password_from_keyring(apple_id)
+
+
+def _read_password_file(path: str) -> str:
+    """Read a password from a secrets file.
+
+    The file should contain just the password (plus a trailing
+    newline) and be mode 0600. A looser mode only earns a warning —
+    the file is still read — so operators are not locked out by an
+    accidental chmod, but the misconfiguration is visible in logs.
+    """
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            content = handle.read()
+    except OSError as exc:
+        raise AuthenticationError(
+            f"Could not read password file {path}: {exc}"
+        ) from exc
+    mode = stat.S_IMODE(os.stat(path).st_mode)
+    if mode & 0o077:
+        _LOGGER.warning(
+            "Password file %s is readable by group/other (mode %o); "
+            "it should be 0600.",
+            path,
+            mode,
+        )
+    password = content.strip()
+    if not password:
+        raise AuthenticationError(f"Password file {path} is empty.")
+    return password
+
+
+def login(
+    apple_id: str,
+    *,
+    password: Optional[str] = None,
+    save_password: Optional[bool] = None,
+    code_prompt: PromptFn = default_code_prompt,
+    interactive: bool = True,
+    data_dir: Optional[str] = None,
+    password_source: str = "auto",
+    password_file: Optional[str] = None,
+) -> PyiCloudService:
+    """Authenticate to iCloud and return a ready-to-use PyiCloudService.
+
+    Never logs or returns the raw password. Raises AuthenticationError on
+    bad credentials and TwoFactorRequiredError when a 2FA code is needed
+    but cannot be obtained (non-interactive mode never prompts — it
+    fails cleanly instead).
+
+    With a valid trusted session in the data dir, no password is needed:
+    pyicloud validates the stored session token. `save_password`
+    defaults to True when interactive and False otherwise, so the
+    service path never stores anything at rest.
+    """
+    if data_dir is None:
+        data_dir = os.environ.get(DATA_DIR_ENV_VAR) or None
+    password = resolve_password(
+        apple_id,
+        password_source,
+        password=password,
+        password_file=password_file,
+    )
+    if password is None and interactive:
+        password = getpass.getpass(f"Apple ID password for {apple_id}: ")
+    if save_password is None:
+        save_password = interactive
+
+    kwargs: dict = {}
+    if data_dir is not None:
+        kwargs["cookie_directory"] = data_dir
+    try:
+        service = PyiCloudService(apple_id, password, **kwargs)
+    except PyiCloudFailedLoginException as exc:
+        raise AuthenticationError(
+            "Invalid Apple ID or password. Please try again."
+        ) from exc
+
+    # PyiCloudService swallows the 2FA-required exception internally and
+    # instead exposes it via the requires_2fa property, so we must check
+    # for it explicitly rather than relying on a raised exception.
+    if service.requires_2fa:
+        if interactive:
+            _handle_2fa(service, code_prompt)
+        else:
+            raise TwoFactorRequiredError(
+                "A two-factor authentication code is required to continue. "
+                "Re-authenticate interactively (see SETUP.md)."
+            )
+
+    if save_password and password is not None:
+        try:
+            store_password_in_keyring(apple_id, password)
+        except Exception:  # pragma: no cover - keyring backend issues
+            _LOGGER.debug(
+                "Could not save password to OS keychain; "
+                "you may be prompted again next time."
+            )
+
+    return service
+
+
+def _handle_2fa(service: PyiCloudService, code_prompt: PromptFn) -> None:
+    """Drive the interactive two-factor authentication challenge."""
+    code = code_prompt(
+        "Two-factor authentication required. "
+        "Enter the code sent to your trusted device: "
+    )
+    if not code:
+        raise TwoFactorRequiredError(
+            "A two-factor authentication code is required to continue."
+        )
+
+    try:
+        valid = service.validate_2fa_code(code)
+    except PyiCloudAPIResponseException as exc:
+        raise AuthenticationError(
+            "Failed to validate the two-factor authentication code."
+        ) from exc
+
+    if not valid:
+        raise AuthenticationError("Incorrect two-factor authentication code.")
+
+    # Trust this session so subsequent runs reuse it without re-prompting.
+    service.trust_session()
