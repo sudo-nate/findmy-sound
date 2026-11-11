@@ -1,1 +1,360 @@
-IiIiVGVzdHMgZm9yIHRoZSBhdXRoZW50aWNhdGVkIEhUVFAgc2VydmljZSAoc2VydmVyLnB5KS4KClR3byBsYXllcnM6IFJpbmdTZXJ2aWNlIHVuaXQgdGVzdHMgKG5vIHNvY2tldHMpIGFuZCBsb29wYmFjayBIVFRQIHRlc3RzCmFnYWluc3QgYSByZWFsIFRocmVhZGluZ0hUVFBTZXJ2ZXIgYm91bmQgdG8gMTI3LjAuMC4xOjAuIEFsbCBpQ2xvdWQKaW50ZXJhY3Rpb24gaXMgZmFrZWQg4oCUIG5vIHJlYWwgQXBwbGUgQWNjb3VudCBvciBuZXR3b3JrIGFjY2Vzcy4KIiIiCgpmcm9tIF9fZnV0dXJlX18gaW1wb3J0IGFubm90YXRpb25zCgppbXBvcnQganNvbgppbXBvcnQgbG9nZ2luZwppbXBvcnQgdGhyZWFkaW5nCmltcG9ydCB1cmxsaWIuZXJyb3IKaW1wb3J0IHVybGxpYi5yZXF1ZXN0CgppbXBvcnQgcHl0ZXN0Cgpmcm9tIGZpbmRteV9zb3VuZC5jb25maWcgaW1wb3J0IFByb2ZpbGUsIFNlcnZlckNvbmZpZwpmcm9tIGZpbmRteV9zb3VuZC5lcnJvcnMgaW1wb3J0ICgKICAgIEF1dGhlbnRpY2F0aW9uRXJyb3IsCiAgICBEZXZpY2VOb3RGb3VuZEVycm9yLAogICAgUHJvZmlsZU5vdEZvdW5kRXJyb3IsCiAgICBSYXRlTGltaXRlZEVycm9yLAopCmZyb20gZmluZG15X3NvdW5kLnNlcnZlciBpbXBvcnQgKAogICAgUmF0ZUxpbWl0ZXIsCiAgICBSaW5nU2VydmljZSwKICAgIF9yZWRhY3QsCiAgICBjcmVhdGVfc2VydmVyLAopCgpUT0tFTiA9ICJ0ZXN0LWJlYXJlci10b2tlbiIKRlVMTF9JRF9NRSA9ICJkZXZpY2UtYWFhLTExMSIKRlVMTF9JRF9QQVJUTkVSXzEgPSAiZGV2aWNlLWJiYi0yMjIiCkZVTExfSURfUEFSVE5FUl8yID0gImRldmljZS1jY2MtMzMzIgoKCmNsYXNzIEZha2VDbGllbnQ6CiAgICAiIiJTdGFuZHMgaW4gZm9yIEZpbmRNeUNsaWVudDsgcmVjb3JkcyByaW5ncywgb3B0aW9uYWxseSBmYWlscy4iIiIKCiAgICBkZWYgX19pbml0X18oc2VsZiwgZmFpbF93aXRoOiBFeGNlcHRpb24gfCBOb25lID0gTm9uZSkgLT4gTm9uZToKICAgICAgICBzZWxmLnJhbmc6IGxpc3Rbc3RyXSA9IFtdCiAgICAgICAgc2VsZi5mYWlsX3dpdGggPSBmYWlsX3dpdGgKCiAgICBkZWYgcGxheV9zb3VuZChzZWxmLCBkZXZpY2VfaWQ6IHN0cikgLT4gTm9uZToKICAgICAgICBpZiBzZWxmLmZhaWxfd2l0aCBpcyBub3QgTm9uZToKICAgICAgICAgICAgcmFpc2Ugc2VsZi5mYWlsX3dpdGgKICAgICAgICBzZWxmLnJhbmcuYXBwZW5kKGRldmljZV9pZCkKCgpkZWYgX2NvbmZpZygpIC0+IFNlcnZlckNvbmZpZzoKICAgIHJldHVybiBTZXJ2ZXJDb25maWcoCiAgICAgICAgaG9zdD0iMTI3LjAuMC4xIiwKICAgICAgICBwb3J0PTAsCiAgICAgICAgYmVhcmVyX3Rva2VuPVRPS0VOLAogICAgICAgIHByb2ZpbGVzPXsKICAgICAgICAgICAgIm1lIjogUHJvZmlsZSgKICAgICAgICAgICAgICAgIG5hbWU9Im1lIiwKICAgICAgICAgICAgICAgIGFwcGxlX2lkPSJtZUBleGFtcGxlLmNvbSIsCiAgICAgICAgICAgICAgICBkZXZpY2VfaWRzPWZyb3plbnNldCh7RlVMTF9JRF9NRX0pLAogICAgICAgICAgICAgICAgZGF0YV9kaXI9Ii90bXAveC9tZSIsCiAgICAgICAgICAgICksCiAgICAgICAgICAgICJwYXJ0bmVyIjogUHJvZmlsZSgKICAgICAgICAgICAgICAgIG5hbWU9InBhcnRuZXIiLAogICAgICAgICAgICAgICAgYXBwbGVfaWQ9InBhcnRuZXJAZXhhbXBsZS5jb20iLAogICAgICAgICAgICAgICAgZGV2aWNlX2lkcz1mcm96ZW5zZXQoe0ZVTExfSURfUEFSVE5FUl8xLCBGVUxMX0lEX1BBUlRORVJfMn0pLAogICAgICAgICAgICAgICAgZGF0YV9kaXI9Ii90bXAveC9wYXJ0bmVyIiwKICAgICAgICAgICAgKSwKICAgICAgICB9LAogICAgICAgIGRhdGFfZGlyPSIvdG1wL3giLAogICAgKQoKCmRlZiBfc2VydmljZSgqKmt3YXJncykgLT4gdHVwbGVbUmluZ1NlcnZpY2UsIGRpY3Rbc3RyLCBGYWtlQ2xpZW50XV06CiAgICBmYWtlczogZGljdFtzdHIsIEZha2VDbGllbnRdID0ge30KCiAgICBkZWYgZmFjdG9yeShwcm9maWxlOiBQcm9maWxlKSAtPiBGYWtlQ2xpZW50OgogICAgICAgIGZha2UgPSBGYWtlQ2xpZW50KCkKICAgICAgICBmYWtlc1twcm9maWxlLm5hbWVdID0gZmFrZQogICAgICAgIHJldHVybiBmYWtlCgogICAgcmV0dXJuIFJpbmdTZXJ2aWNlKF9jb25maWcoKSwgY2xpZW50X2ZhY3Rvcnk9ZmFjdG9yeSwgKiprd2FyZ3MpLCBmYWtlcwoKCiMgLS0tIFJpbmdTZXJ2aWNlIHVuaXQgdGVzdHMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKCmRlZiB0ZXN0X3JpbmdfYnlfcHJvZmlsZV9zaW5nbGVfZGV2aWNlKCk6CiAgICBzZXJ2aWNlLCBmYWtlcyA9IF9zZXJ2aWNlKCkKICAgIHJlc3VsdCA9IHNlcnZpY2UucmluZyhwcm9maWxlPSJtZSIpCgogICAgYXNzZXJ0IHJlc3VsdFsic3RhdHVzIl0gPT0gIm9rIgogICAgYXNzZXJ0IHJlc3VsdFsicHJvZmlsZSJdID09ICJtZSIKICAgIGFzc2VydCByZXN1bHRbImRldmljZV9pZCJdID09IF9yZWRhY3QoRlVMTF9JRF9NRSkKICAgIGFzc2VydCBGVUxMX0lEX01FIG5vdCBpbiBqc29uLmR1bXBzKHJlc3VsdCkKICAgIGFzc2VydCBmYWtlc1sibWUiXS5yYW5nID09IFtGVUxMX0lEX01FXQoKCmRlZiB0ZXN0X3JpbmdfYnlfZGV2aWNlX2lkX3Jlc29sdmVzX3Byb2ZpbGUoKToKICAgIHNlcnZpY2UsIGZha2VzID0gX3NlcnZpY2UoKQogICAgcmVzdWx0ID0gc2VydmljZS5yaW5nKGRldmljZV9pZD1GVUxMX0lEX1BBUlRORVJfMikKCiAgICBhc3NlcnQgcmVzdWx0WyJwcm9maWxlIl0gPT0gInBhcnRuZXIiCiAgICBhc3NlcnQgZmFrZXNbInBhcnRuZXIiXS5yYW5nID09IFtGVUxMX0lEX1BBUlRORVJfMl0KICAgIGFzc2VydCAibWUiIG5vdCBpbiBmYWtlcyAgIyBubyBjbGllbnQgY3JlYXRlZCBmb3IgdGhlIG90aGVyIHByb2ZpbGUKCgpkZWYgdGVzdF9yaW5nX3Vua25vd25fcHJvZmlsZSgpOgogICAgc2VydmljZSwgXyA9IF9zZXJ2aWNlKCkKICAgIHdpdGggcHl0ZXN0LnJhaXNlcyhQcm9maWxlTm90Rm91bmRFcnJvcik6CiAgICAgICAgc2VydmljZS5yaW5nKHByb2ZpbGU9Im5vYm9keSIpCgoKZGVmIHRlc3RfcmluZ19kZXZpY2Vfbm90X2luX3Byb2ZpbGVfYWxsb3dsaXN0KCk6CiAgICBzZXJ2aWNlLCBfID0gX3NlcnZpY2UoKQogICAgd2l0aCBweXRlc3QucmFpc2VzKERldmljZU5vdEZvdW5kRXJyb3IpOgogICAgICAgIHNlcnZpY2UucmluZyhwcm9maWxlPSJtZSIsIGRldmljZV9pZD1GVUxMX0lEX1BBUlRORVJfMSkKCgpkZWYgdGVzdF9yaW5nX3Vua25vd25fZGV2aWNlX2lkKCk6CiAgICBzZXJ2aWNlLCBfID0gX3NlcnZpY2UoKQogICAgd2l0aCBweXRlc3QucmFpc2VzKERldmljZU5vdEZvdW5kRXJyb3IpOgogICAgICAgIHNlcnZpY2UucmluZyhkZXZpY2VfaWQ9ImRldmljZS16enotOTk5IikKCgpkZWYgdGVzdF9yaW5nX211bHRpX2RldmljZV9wcm9maWxlX3JlcXVpcmVzX2RldmljZV9pZCgpOgogICAgc2VydmljZSwgXyA9IF9zZXJ2aWNlKCkKICAgIHdpdGggcHl0ZXN0LnJhaXNlcyhWYWx1ZUVycm9yLCBtYXRjaD0ic3BlY2lmeSBkZXZpY2VfaWQiKToKICAgICAgICBzZXJ2aWNlLnJpbmcocHJvZmlsZT0icGFydG5lciIpCgoKZGVmIHRlc3RfcmluZ193aXRoX25vX3RhcmdldF9yYWlzZXMoKToKICAgIHNlcnZpY2UsIF8gPSBfc2VydmljZSgpCiAgICB3aXRoIHB5dGVzdC5yYWlzZXMoVmFsdWVFcnJvciwgbWF0Y2g9IlNwZWNpZnkgcHJvZmlsZSBvciBkZXZpY2VfaWQiKToKICAgICAgICBzZXJ2aWNlLnJpbmcoKQoKCmRlZiB0ZXN0X3JhdGVfbGltaXRlcl9wZXJfcHJvZmlsZSgpOgogICAgbGltaXRlciA9IFJhdGVMaW1pdGVyKHBlcl9wcm9maWxlX21pbl9zZWNvbmRzPTEwLjApCiAgICBhc3NlcnQgbGltaXRlci50cnlfYWNxdWlyZSgibWUiKSBpcyBUcnVlCiAgICBhc3NlcnQgbGltaXRlci50cnlfYWNxdWlyZSgibWUiKSBpcyBGYWxzZSAgIyB0b28gc29vbgogICAgYXNzZXJ0IGxpbWl0ZXIudHJ5X2FjcXVpcmUoInBhcnRuZXIiKSBpcyBUcnVlICAjIG90aGVyIHByb2ZpbGUgdW5hZmZlY3RlZAoKCmRlZiB0ZXN0X3JhdGVfbGltaXRlcl9nbG9iYWxfY2FwKCk6CiAgICBsaW1pdGVyID0gUmF0ZUxpbWl0ZXIocGVyX3Byb2ZpbGVfbWluX3NlY29uZHM9MCwgZ2xvYmFsX21heF9wZXJfbWludXRlPTIpCiAgICBhc3NlcnQgbGltaXRlci50cnlfYWNxdWlyZSgiYSIpIGlzIFRydWUKICAgIGFzc2VydCBsaW1pdGVyLnRyeV9hY3F1aXJlKCJiIikgaXMgVHJ1ZQogICAgYXNzZXJ0IGxpbWl0ZXIudHJ5X2FjcXVpcmUoImMiKSBpcyBGYWxzZQoKCmRlZiB0ZXN0X3Jpbmdfc2Vjb25kX3Rvb19zb29uX2lzX3JhdGVfbGltaXRlZCgpOgogICAgc2VydmljZSwgXyA9IF9zZXJ2aWNlKCkKICAgIHNlcnZpY2UucmluZyhwcm9maWxlPSJtZSIpCiAgICB3aXRoIHB5dGVzdC5yYWlzZXMoUmF0ZUxpbWl0ZWRFcnJvcik6CiAgICAgICAgc2VydmljZS5yaW5nKHByb2ZpbGU9Im1lIikKCgpkZWYgdGVzdF9oZWFsdGhfaW5pdGlhbF9zdGF0ZSgpOgogICAgc2VydmljZSwgXyA9IF9zZXJ2aWNlKCkKICAgIGhlYWx0aCA9IHNlcnZpY2UuaGVhbHRoKCkKCiAgICBhc3NlcnQgaGVhbHRoWyJzdGF0dXMiXSA9PSAib2siCiAgICBhc3NlcnQgaGVhbHRoWyJhdXRoIl0gPT0gIm9rIgogICAgYXNzZXJ0IGhlYWx0aFsibGFzdF9yaW5nIl0gaXMgTm9uZQogICAgYXNzZXJ0IGhlYWx0aFsicHJvZmlsZXMiXVsibWUiXSA9PSB7ImF1dGgiOiAib2siLCAibGFzdF9yaW5nIjogTm9uZX0KCgpkZWYgdGVzdF9oZWFsdGhfcmVwb3J0c19sYXN0X3JpbmcoKToKICAgIHNlcnZpY2UsIF8gPSBfc2VydmljZSgpCiAgICBzZXJ2aWNlLnJpbmcocHJvZmlsZT0ibWUiKQogICAgaGVhbHRoID0gc2VydmljZS5oZWFsdGgoKQoKICAgIGFzc2VydCBoZWFsdGhbImxhc3RfcmluZyJdIGlzIG5vdCBOb25lCiAgICBhc3NlcnQgaGVhbHRoWyJwcm9maWxlcyJdWyJtZSJdWyJsYXN0X3JpbmciXSBpcyBub3QgTm9uZQogICAgYXNzZXJ0IGhlYWx0aFsicHJvZmlsZXMiXVsicGFydG5lciJdWyJsYXN0X3JpbmciXSBpcyBOb25lCgoKZGVmIHRlc3RfYXV0aF9mYWlsdXJlX21hcmtzX25lZWRzX3JlYXV0aF90aGVuX3JlY292ZXJzKCk6CiAgICBzZXJ2aWNlLCBmYWtlcyA9IF9zZXJ2aWNlKAogICAgICAgIHJhdGVfbGltaXRlcj1SYXRlTGltaXRlcihwZXJfcHJvZmlsZV9taW5fc2Vjb25kcz0wKQogICAgKQogICAgc2VydmljZS5yaW5nKHByb2ZpbGU9Im1lIikgICMgY3JlYXRlcyBhbmQgY2FjaGVzIHRoZSBmYWtlIGNsaWVudAogICAgZmFrZXNbIm1lIl0uZmFpbF93aXRoID0gQXV0aGVudGljYXRpb25FcnJvcigic2Vzc2lvbiBleHBpcmVkIikKCiAgICB3aXRoIHB5dGVzdC5yYWlzZXMoQXV0aGVudGljYXRpb25FcnJvcik6CiAgICAgICAgc2VydmljZS5yaW5nKHByb2ZpbGU9Im1lIikKICAgIGFzc2VydCBzZXJ2aWNlLmhlYWx0aCgpWyJhdXRoIl0gPT0gIm5lZWRzX3JlYXV0aCIKICAgIGFzc2VydCBzZXJ2aWNlLmhlYWx0aCgpWyJwcm9maWxlcyJdWyJtZSJdWyJhdXRoIl0gPT0gIm5lZWRzX3JlYXV0aCIKCiAgICBmYWtlc1sibWUiXS5mYWlsX3dpdGggPSBOb25lCiAgICBzZXJ2aWNlLnJpbmcocHJvZmlsZT0ibWUiKQogICAgYXNzZXJ0IHNlcnZpY2UuaGVhbHRoKClbImF1dGgiXSA9PSAib2siCgoKZGVmIHRlc3RfcmluZ19sb2dzX3JlZGFjdGVkX2RldmljZV9pZF9vbmx5KGNhcGxvZyk6CiAgICBzZXJ2aWNlLCBfID0gX3NlcnZpY2UoKQogICAgd2l0aCBjYXBsb2cuYXRfbGV2ZWwobG9nZ2luZy5JTkZPLCBsb2dnZXI9ImZpbmRteV9zb3VuZC5zZXJ2ZXIiKToKICAgICAgICBzZXJ2aWNlLnJpbmcocHJvZmlsZT0ibWUiKQoKICAgIGFzc2VydCBGVUxMX0lEX01FIG5vdCBpbiBjYXBsb2cudGV4dAogICAgYXNzZXJ0IF9yZWRhY3QoRlVMTF9JRF9NRSkgaW4gY2FwbG9nLnRleHQKCgojIC0tLSBMb29wYmFjayBIVFRQIHRlc3RzIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KCgpAcHl0ZXN0LmZpeHR1cmUKZGVmIHJ1bm5pbmdfc2VydmVyKCk6CiAgICBmYWtlczogZGljdFtzdHIsIEZha2VDbGllbnRdID0ge30KICAgIGZhaWx1cmVzOiBkaWN0W3N0ciwgRXhjZXB0aW9uXSA9IHt9CgogICAgZGVmIGZhY3RvcnkocHJvZmlsZTogUHJvZmlsZSkgLT4gRmFrZUNsaWVudDoKICAgICAgICBmYWtlID0gRmFrZUNsaWVudChmYWlsX3dpdGg9ZmFpbHVyZXMuZ2V0KHByb2ZpbGUubmFtZSkpCiAgICAgICAgZmFrZXNbcHJvZmlsZS5uYW1lXSA9IGZha2UKICAgICAgICByZXR1cm4gZmFrZQoKICAgIHNlcnZlciA9IGNyZWF0ZV9zZXJ2ZXIoX2NvbmZpZygpLCBjbGllbnRfZmFjdG9yeT1mYWN0b3J5KQogICAgdGhyZWFkID0gdGhyZWFkaW5nLlRocmVhZCh0YXJnZXQ9c2VydmVyLnNlcnZlX2ZvcmV2ZXIsIGRhZW1vbj1UcnVlKQogICAgdGhyZWFkLnN0YXJ0KCkKICAgIHRyeToKICAgICAgICB5aWVsZCBzZXJ2ZXIsIGZha2VzLCBmYWlsdXJlcwogICAgZmluYWxseToKICAgICAgICBzZXJ2ZXIuc2h1dGRvd24oKQogICAgICAgIHNlcnZlci5zZXJ2ZXJfY2xvc2UoKQogICAgICAgIHRocmVhZC5qb2luKHRpbWVvdXQ9NSkKCgpkZWYgX3JlcXVlc3Qoc2VydmVyLCBtZXRob2QsIHBhdGgsIGJvZHk9Tm9uZSwgdG9rZW49Tm9uZSk6CiAgICBwb3J0ID0gc2VydmVyLnNlcnZlcl9hZGRyZXNzWzFdCiAgICByZXF1ZXN0ID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCgKICAgICAgICBmImh0dHA6Ly8xMjcuMC4wLjE6e3BvcnR9e3BhdGh9IiwgbWV0aG9kPW1ldGhvZAogICAgKQogICAgaWYgdG9rZW4gaXMgbm90IE5vbmU6CiAgICAgICAgcmVxdWVzdC5hZGRfaGVhZGVyKCJBdXRob3JpemF0aW9uIiwgZiJCZWFyZXIge3Rva2VufSIpCiAgICBkYXRhID0gTm9uZQogICAgaWYgYm9keSBpcyBub3QgTm9uZToKICAgICAgICBkYXRhID0gYm9keSBpZiBpc2luc3RhbmNlKGJvZHksIGJ5dGVzKSBlbHNlIGpzb24uZHVtcHMoYm9keSkuZW5jb2RlKCkKICAgICAgICByZXF1ZXN0LmFkZF9oZWFkZXIoIkNvbnRlbnQtVHlwZSIsICJhcHBsaWNhdGlvbi9qc29uIikKICAgIHRyeToKICAgICAgICB3aXRoIHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxdWVzdCwgZGF0YT1kYXRhLCB0aW1lb3V0PTUpIGFzIHJlc3A6CiAgICAgICAgICAgIHJldHVybiByZXNwLnN0YXR1cywganNvbi5sb2FkcyhyZXNwLnJlYWQoKSBvciBiInt9IiksIHJlc3AuaGVhZGVycwogICAgZXhjZXB0IHVybGxpYi5lcnJvci5IVFRQRXJyb3IgYXMgZXhjOgogICAgICAgIHJldHVybiBleGMuY29kZSwganNvbi5sb2FkcyhleGMucmVhZCgpIG9yIGIie30iKSwgZXhjLmhlYWRlcnMKCgpkZWYgdGVzdF9oZWFsdGh6X25lZWRzX25vX2F1dGgocnVubmluZ19zZXJ2ZXIpOgogICAgc2VydmVyLCBfLCBfID0gcnVubmluZ19zZXJ2ZXIKICAgIHN0YXR1cywgYm9keSwgXyA9IF9yZXF1ZXN0KHNlcnZlciwgIkdFVCIsICIvaGVhbHRoeiIpCiAgICBhc3NlcnQgc3RhdHVzID09IDIwMAogICAgYXNzZXJ0IGJvZHlbInN0YXR1cyJdID09ICJvayIKICAgIGFzc2VydCBib2R5WyJhdXRoIl0gPT0gIm9rIgoKCmRlZiB0ZXN0X3Vua25vd25fcGF0aF80MDQocnVubmluZ19zZXJ2ZXIpOgogICAgc2VydmVyLCBfLCBfID0gcnVubmluZ19zZXJ2ZXIKICAgIHN0YXR1cywgYm9keSwgXyA9IF9yZXF1ZXN0KHNlcnZlciwgIkdFVCIsICIvbm9wZSIpCiAgICBhc3NlcnQgc3RhdHVzID09IDQwNAogICAgYXNzZXJ0IGJvZHlbImVycm9yIl0gPT0gIm5vdF9mb3VuZCIKCgpkZWYgdGVzdF9yaW5nX3JlcXVpcmVzX2JlYXJlcl90b2tlbihydW5uaW5nX3NlcnZlcik6CiAgICBzZXJ2ZXIsIF8sIF8gPSBydW5uaW5nX3NlcnZlcgogICAgc3RhdHVzLCBib2R5LCBfID0gX3JlcXVlc3Qoc2VydmVyLCAiUE9TVCIsICIvcmluZyIsIHsicHJvZmlsZSI6ICJtZSJ9KQogICAgYXNzZXJ0IHN0YXR1cyA9PSA0MDEKICAgIGFzc2VydCBib2R5WyJlcnJvciJdID09ICJ1bmF1dGhvcml6ZWQiCgogICAgc3RhdHVzLCBfLCBfID0gX3JlcXVlc3QoCiAgICAgICAgc2VydmVyLCAiUE9TVCIsICIvcmluZyIsIHsicHJvZmlsZSI6ICJtZSJ9LCB0b2tlbj0id3JvbmctdG9rZW4iCiAgICApCiAgICBhc3NlcnQgc3RhdHVzID09IDQwMQoKCmRlZiB0ZXN0X3Jpbmdfc3VjY2Vzc19vdmVyX2h0dHAocnVubmluZ19zZXJ2ZXIpOgogICAgc2VydmVyLCBmYWtlcywgXyA9IHJ1bm5pbmdfc2VydmVyCiAgICBzdGF0dXMsIGJvZHksIF8gPSBfcmVxdWVzdCgKICAgICAgICBzZXJ2ZXIsICJQT1NUIiwgIi9yaW5nIiwgeyJwcm9maWxlIjogIm1lIn0sIHRva2VuPVRPS0VOCiAgICApCiAgICBhc3NlcnQgc3RhdHVzID09IDIwMAogICAgYXNzZXJ0IGJvZHlbInN0YXR1cyJdID09ICJvayIKICAgIGFzc2VydCBib2R5WyJwcm9maWxlIl0gPT0gIm1lIgogICAgYXNzZXJ0IEZVTExfSURfTUUgbm90IGluIGpzb24uZHVtcHMoYm9keSkKICAgIGFzc2VydCBmYWtlc1sibWUiXS5yYW5nID09IFtGVUxMX0lEX01FXQoKCmRlZiB0ZXN0X3JpbmdfdW5rbm93bl9kZXZpY2VfNDA0X292ZXJfaHR0cChydW5uaW5nX3NlcnZlcik6CiAgICBzZXJ2ZXIsIF8sIF8gPSBydW5uaW5nX3NlcnZlcgogICAgc3RhdHVzLCBib2R5LCBfID0gX3JlcXVlc3QoCiAgICAgICAgc2VydmVyLCAiUE9TVCIsICIvcmluZyIsIHsiZGV2aWNlX2lkIjogImRldmljZS16enotOTk5In0sIHRva2VuPVRPS0VOCiAgICApCiAgICBhc3NlcnQgc3RhdHVzID09IDQwNAogICAgYXNzZXJ0IGJvZHlbImVycm9yIl0gPT0gIm5vdF9mb3VuZCIKCgpkZWYgdGVzdF9yaW5nX3Vua25vd25fcHJvZmlsZV80MDRfb3Zlcl9odHRwKHJ1bm5pbmdfc2VydmVyKToKICAgIHNlcnZlciwgXywgXyA9IHJ1bm5pbmdfc2VydmVyCiAgICBzdGF0dXMsIGJvZHksIF8gPSBfcmVxdWVzdCgKICAgICAgICBzZXJ2ZXIsICJQT1NUIiwgIi9yaW5nIiwgeyJwcm9maWxlIjogIm5vYm9keSJ9LCB0b2tlbj1UT0tFTgogICAgKQogICAgYXNzZXJ0IHN0YXR1cyA9PSA0MDQKICAgIGFzc2VydCBib2R5WyJkZXRhaWwiXSA9PSAidW5rbm93biBwcm9maWxlIgoKCmRlZiB0ZXN0X3JpbmdfbWFsZm9ybWVkX2pzb25fNDAwKHJ1bm5pbmdfc2VydmVyKToKICAgIHNlcnZlciwgXywgXyA9IHJ1bm5pbmdfc2VydmVyCiAgICBzdGF0dXMsIGJvZHksIF8gPSBfcmVxdWVzdCgKICAgICAgICBzZXJ2ZXIsICJQT1NUIiwgIi9yaW5nIiwgYiJ7bm90IGpzb24iLCB0b2tlbj1UT0tFTgogICAgKQogICAgYXNzZXJ0IHN0YXR1cyA9PSA0MDAKICAgIGFzc2VydCBib2R5WyJlcnJvciJdID09ICJiYWRfcmVxdWVzdCIKCgpkZWYgdGVzdF9yaW5nX2VtcHR5X2JvZHlfNDAwKHJ1bm5pbmdfc2VydmVyKToKICAgIHNlcnZlciwgXywgXyA9IHJ1bm5pbmdfc2VydmVyCiAgICBzdGF0dXMsIGJvZHksIF8gPSBfcmVxdWVzdChzZXJ2ZXIsICJQT1NUIiwgIi9yaW5nIiwge30sIHRva2VuPVRPS0VOKQogICAgYXNzZXJ0IHN0YXR1cyA9PSA0MDAKICAgIGFzc2VydCBib2R5WyJlcnJvciJdID09ICJiYWRfcmVxdWVzdCIKCgpkZWYgdGVzdF9yaW5nX3JhdGVfbGltaXRlZF80Mjlfb3Zlcl9odHRwKHJ1bm5pbmdfc2VydmVyKToKICAgIHNlcnZlciwgXywgXyA9IHJ1bm5pbmdfc2VydmVyCiAgICBzdGF0dXMsIF8sIF8gPSBfcmVxdWVzdCgKICAgICAgICBzZXJ2ZXIsICJQT1NUIiwgIi9yaW5nIiwgeyJwcm9maWxlIjogIm1lIn0sIHRva2VuPVRPS0VOCiAgICApCiAgICBhc3NlcnQgc3RhdHVzID09IDIwMAogICAgc3RhdHVzLCBib2R5LCBfID0gX3JlcXVlc3QoCiAgICAgICAgc2VydmVyLCAiUE9TVCIsICIvcmluZyIsIHsicHJvZmlsZSI6ICJtZSJ9LCB0b2tlbj1UT0tFTgogICAgKQogICAgYXNzZXJ0IHN0YXR1cyA9PSA0MjkKICAgIGFzc2VydCBib2R5WyJlcnJvciJdID09ICJyYXRlX2xpbWl0ZWQiCgoKZGVmIHRlc3RfcmluZ19uZWVkc19yZWF1dGhfNTAzX292ZXJfaHR0cChydW5uaW5nX3NlcnZlcik6CiAgICBzZXJ2ZXIsIF8sIGZhaWx1cmVzID0gcnVubmluZ19zZXJ2ZXIKICAgIGZhaWx1cmVzWyJwYXJ0bmVyIl0gPSBBdXRoZW50aWNhdGlvbkVycm9yKCJzZXNzaW9uIGV4cGlyZWQiKQogICAgc3RhdHVzLCBib2R5LCBfID0gX3JlcXVlc3QoCiAgICAgICAgc2VydmVyLAogICAgICAgICJQT1NUIiwKICAgICAgICAiL3JpbmciLAogICAgICAgIHsicHJvZmlsZSI6ICJwYXJ0bmVyIiwgImRldmljZV9pZCI6IEZVTExfSURfUEFSVE5FUl8xfSwKICAgICAgICB0b2tlbj1UT0tFTiwKICAgICkKICAgIGFzc2VydCBzdGF0dXMgPT0gNTAzCiAgICBhc3NlcnQgYm9keVsiZXJyb3IiXSA9PSAibmVlZHNfcmVhdXRoIgoKICAgIHN0YXR1cywgYm9keSwgXyA9IF9yZXF1ZXN0KHNlcnZlciwgIkdFVCIsICIvaGVhbHRoeiIpCiAgICBhc3NlcnQgYm9keVsiYXV0aCJdID09ICJuZWVkc19yZWF1dGgiCiAgICBhc3NlcnQgYm9keVsicHJvZmlsZXMiXVsicGFydG5lciJdWyJhdXRoIl0gPT0gIm5lZWRzX3JlYXV0aCIKCgpkZWYgdGVzdF9odHRwX2xvZ3NfYW5kX2hlYWRlcnNfbmV2ZXJfbGVha19zZWNyZXRzKHJ1bm5pbmdfc2VydmVyLCBjYXBsb2cpOgogICAgc2VydmVyLCBfLCBfID0gcnVubmluZ19zZXJ2ZXIKICAgIHdpdGggY2FwbG9nLmF0X2xldmVsKGxvZ2dpbmcuSU5GTywgbG9nZ2VyPSJmaW5kbXlfc291bmQuc2VydmVyIik6CiAgICAgICAgc3RhdHVzLCBfLCBoZWFkZXJzID0gX3JlcXVlc3QoCiAgICAgICAgICAgIHNlcnZlciwgIlBPU1QiLCAiL3JpbmciLCB7InByb2ZpbGUiOiAibWUifSwgdG9rZW49VE9LRU4KICAgICAgICApCiAgICBhc3NlcnQgc3RhdHVzID09IDIwMAogICAgYXNzZXJ0IEZVTExfSURfTUUgbm90IGluIGNhcGxvZy50ZXh0CiAgICBhc3NlcnQgVE9LRU4gbm90IGluIGNhcGxvZy50ZXh0CiAgICBhc3NlcnQgIlB5dGhvbiIgbm90IGluIGhlYWRlcnMuZ2V0KCJTZXJ2ZXIiLCAiIikK
+"""Tests for the authenticated HTTP service (server.py).
+
+Two layers: RingService unit tests (no sockets) and loopback HTTP tests
+against a real ThreadingHTTPServer bound to 127.0.0.1:0. All iCloud
+interaction is faked — no real Apple Account or network access.
+"""
+
+from __future__ import annotations
+
+import json
+import logging
+import threading
+import urllib.error
+import urllib.request
+
+import pytest
+
+from findmy_sound.config import Profile, ServerConfig
+from findmy_sound.errors import (
+    AuthenticationError,
+    DeviceNotFoundError,
+    ProfileNotFoundError,
+    RateLimitedError,
+)
+from findmy_sound.server import (
+    RateLimiter,
+    RingService,
+    _redact,
+    create_server,
+)
+
+TOKEN = "test-bearer-token"
+FULL_ID_ME = "device-aaa-111"
+FULL_ID_PARTNER_1 = "device-bbb-222"
+FULL_ID_PARTNER_2 = "device-ccc-333"
+
+
+class FakeClient:
+    """Stands in for FindMyClient; records rings, optionally fails."""
+
+    def __init__(self, fail_with: Exception | None = None) -> None:
+        self.rang: list[str] = []
+        self.fail_with = fail_with
+
+    def play_sound(self, device_id: str) -> None:
+        if self.fail_with is not None:
+            raise self.fail_with
+        self.rang.append(device_id)
+
+
+def _config() -> ServerConfig:
+    return ServerConfig(
+        host="127.0.0.1",
+        port=0,
+        bearer_token=TOKEN,
+        profiles={
+            "me": Profile(
+                name="me",
+                apple_id="me@example.com",
+                device_ids=frozenset({FULL_ID_ME}),
+                data_dir="/tmp/x/me",
+            ),
+            "partner": Profile(
+                name="partner",
+                apple_id="partner@example.com",
+                device_ids=frozenset({FULL_ID_PARTNER_1, FULL_ID_PARTNER_2}),
+                data_dir="/tmp/x/partner",
+            ),
+        },
+        data_dir="/tmp/x",
+    )
+
+
+def _service(**kwargs) -> tuple[RingService, dict[str, FakeClient]]:
+    fakes: dict[str, FakeClient] = {}
+
+    def factory(profile: Profile) -> FakeClient:
+        fake = FakeClient()
+        fakes[profile.name] = fake
+        return fake
+
+    return RingService(_config(), client_factory=factory, **kwargs), fakes
+
+
+# --- RingService unit tests -------------------------------------------------
+
+
+def test_ring_by_profile_single_device():
+    service, fakes = _service()
+    result = service.ring(profile="me")
+
+    assert result["status"] == "ok"
+    assert result["profile"] == "me"
+    assert result["device_id"] == _redact(FULL_ID_ME)
+    assert FULL_ID_ME not in json.dumps(result)
+    assert fakes["me"].rang == [FULL_ID_ME]
+
+
+def test_ring_by_device_id_resolves_profile():
+    service, fakes = _service()
+    result = service.ring(device_id=FULL_ID_PARTNER_2)
+
+    assert result["profile"] == "partner"
+    assert fakes["partner"].rang == [FULL_ID_PARTNER_2]
+    assert "me" not in fakes  # no client created for the other profile
+
+
+def test_ring_unknown_profile():
+    service, _ = _service()
+    with pytest.raises(ProfileNotFoundError):
+        service.ring(profile="nobody")
+
+
+def test_ring_device_not_in_profile_allowlist():
+    service, _ = _service()
+    with pytest.raises(DeviceNotFoundError):
+        service.ring(profile="me", device_id=FULL_ID_PARTNER_1)
+
+
+def test_ring_unknown_device_id():
+    service, _ = _service()
+    with pytest.raises(DeviceNotFoundError):
+        service.ring(device_id="device-zzz-999")
+
+
+def test_ring_multi_device_profile_requires_device_id():
+    service, _ = _service()
+    with pytest.raises(ValueError, match="specify device_id"):
+        service.ring(profile="partner")
+
+
+def test_ring_with_no_target_raises():
+    service, _ = _service()
+    with pytest.raises(ValueError, match="Specify profile or device_id"):
+        service.ring()
+
+
+def test_rate_limiter_per_profile():
+    limiter = RateLimiter(per_profile_min_seconds=10.0)
+    assert limiter.try_acquire("me") is True
+    assert limiter.try_acquire("me") is False  # too soon
+    assert limiter.try_acquire("partner") is True  # other profile unaffected
+
+
+def test_rate_limiter_global_cap():
+    limiter = RateLimiter(per_profile_min_seconds=0, global_max_per_minute=2)
+    assert limiter.try_acquire("a") is True
+    assert limiter.try_acquire("b") is True
+    assert limiter.try_acquire("c") is False
+
+
+def test_ring_second_too_soon_is_rate_limited():
+    service, _ = _service()
+    service.ring(profile="me")
+    with pytest.raises(RateLimitedError):
+        service.ring(profile="me")
+
+
+def test_health_initial_state():
+    service, _ = _service()
+    health = service.health()
+
+    assert health["status"] == "ok"
+    assert health["auth"] == "ok"
+    assert health["last_ring"] is None
+    assert health["profiles"]["me"] == {"auth": "ok", "last_ring": None}
+
+
+def test_health_reports_last_ring():
+    service, _ = _service()
+    service.ring(profile="me")
+    health = service.health()
+
+    assert health["last_ring"] is not None
+    assert health["profiles"]["me"]["last_ring"] is not None
+    assert health["profiles"]["partner"]["last_ring"] is None
+
+
+def test_auth_failure_marks_needs_reauth_then_recovers():
+    service, fakes = _service(
+        rate_limiter=RateLimiter(per_profile_min_seconds=0)
+    )
+    service.ring(profile="me")  # creates and caches the fake client
+    fakes["me"].fail_with = AuthenticationError("session expired")
+
+    with pytest.raises(AuthenticationError):
+        service.ring(profile="me")
+    assert service.health()["auth"] == "needs_reauth"
+    assert service.health()["profiles"]["me"]["auth"] == "needs_reauth"
+
+    fakes["me"].fail_with = None
+    service.ring(profile="me")
+    assert service.health()["auth"] == "ok"
+
+
+def test_ring_logs_redacted_device_id_only(caplog):
+    service, _ = _service()
+    with caplog.at_level(logging.INFO, logger="findmy_sound.server"):
+        service.ring(profile="me")
+
+    assert FULL_ID_ME not in caplog.text
+    assert _redact(FULL_ID_ME) in caplog.text
+
+
+# --- Loopback HTTP tests ----------------------------------------------------
+
+
+@pytest.fixture
+def running_server():
+    fakes: dict[str, FakeClient] = {}
+    failures: dict[str, Exception] = {}
+
+    def factory(profile: Profile) -> FakeClient:
+        fake = FakeClient(fail_with=failures.get(profile.name))
+        fakes[profile.name] = fake
+        return fake
+
+    server = create_server(_config(), client_factory=factory)
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+    try:
+        yield server, fakes, failures
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=5)
+
+
+def _request(server, method, path, body=None, token=None):
+    port = server.server_address[1]
+    request = urllib.request.Request(
+        f"http://127.0.0.1:{port}{path}", method=method
+    )
+    if token is not None:
+        request.add_header("Authorization", f"Bearer {token}")
+    data = None
+    if body is not None:
+        data = body if isinstance(body, bytes) else json.dumps(body).encode()
+        request.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(request, data=data, timeout=5) as resp:
+            return resp.status, json.loads(resp.read() or b"{}"), resp.headers
+    except urllib.error.HTTPError as exc:
+        return exc.code, json.loads(exc.read() or b"{}"), exc.headers
+
+
+def test_healthz_needs_no_auth(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(server, "GET", "/healthz")
+    assert status == 200
+    assert body["status"] == "ok"
+    assert body["auth"] == "ok"
+
+
+def test_unknown_path_404(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(server, "GET", "/nope")
+    assert status == 404
+    assert body["error"] == "not_found"
+
+
+def test_ring_requires_bearer_token(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(server, "POST", "/ring", {"profile": "me"})
+    assert status == 401
+    assert body["error"] == "unauthorized"
+
+    status, _, _ = _request(
+        server, "POST", "/ring", {"profile": "me"}, token="wrong-token"
+    )
+    assert status == 401
+
+
+def test_ring_success_over_http(running_server):
+    server, fakes, _ = running_server
+    status, body, _ = _request(
+        server, "POST", "/ring", {"profile": "me"}, token=TOKEN
+    )
+    assert status == 200
+    assert body["status"] == "ok"
+    assert body["profile"] == "me"
+    assert FULL_ID_ME not in json.dumps(body)
+    assert fakes["me"].rang == [FULL_ID_ME]
+
+
+def test_ring_unknown_device_404_over_http(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(
+        server, "POST", "/ring", {"device_id": "device-zzz-999"}, token=TOKEN
+    )
+    assert status == 404
+    assert body["error"] == "not_found"
+
+
+def test_ring_unknown_profile_404_over_http(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(
+        server, "POST", "/ring", {"profile": "nobody"}, token=TOKEN
+    )
+    assert status == 404
+    assert body["detail"] == "unknown profile"
+
+
+def test_ring_malformed_json_400(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(
+        server, "POST", "/ring", b"{not json", token=TOKEN
+    )
+    assert status == 400
+    assert body["error"] == "bad_request"
+
+
+def test_ring_empty_body_400(running_server):
+    server, _, _ = running_server
+    status, body, _ = _request(server, "POST", "/ring", {}, token=TOKEN)
+    assert status == 400
+    assert body["error"] == "bad_request"
+
+
+def test_ring_rate_limited_429_over_http(running_server):
+    server, _, _ = running_server
+    status, _, _ = _request(
+        server, "POST", "/ring", {"profile": "me"}, token=TOKEN
+    )
+    assert status == 200
+    status, body, _ = _request(
+        server, "POST", "/ring", {"profile": "me"}, token=TOKEN
+    )
+    assert status == 429
+    assert body["error"] == "rate_limited"
+
+
+def test_ring_needs_reauth_503_over_http(running_server):
+    server, _, failures = running_server
+    failures["partner"] = AuthenticationError("session expired")
+    status, body, _ = _request(
+        server,
+        "POST",
+        "/ring",
+        {"profile": "partner", "device_id": FULL_ID_PARTNER_1},
+        token=TOKEN,
+    )
+    assert status == 503
+    assert body["error"] == "needs_reauth"
+
+    status, body, _ = _request(server, "GET", "/healthz")
+    assert body["auth"] == "needs_reauth"
+    assert body["profiles"]["partner"]["auth"] == "needs_reauth"
+
+
+def test_http_logs_and_headers_never_leak_secrets(running_server, caplog):
+    server, _, _ = running_server
+    with caplog.at_level(logging.INFO, logger="findmy_sound.server"):
+        status, _, headers = _request(
+            server, "POST", "/ring", {"profile": "me"}, token=TOKEN
+        )
+    assert status == 200
+    assert FULL_ID_ME not in caplog.text
+    assert TOKEN not in caplog.text
+    assert "Python" not in headers.get("Server", "")
