@@ -1,1 +1,418 @@
-IiIiU3RkbGliLW9ubHkgSFRUUCBzZXJ2aWNlIGZvciBmaW5kbXktc291bmQuCgpFeHBvc2VzIGEgc21hbGwgYXV0aGVudGljYXRlZCBBUEkgc28gSG9tZSBBc3Npc3RhbnQgKG9yIGFueSBIVFRQIGNsaWVudApvbiB0aGUgTEFOKSBjYW4gdHJpZ2dlciBQbGF5IFNvdW5kIHdpdGhvdXQgU1NIOgoKICBQT1NUIC9yaW5nICAgIHsicHJvZmlsZSI6ICJtZSJ9IG9yIHsiZGV2aWNlX2lkIjogIi4uLiJ9IChCZWFyZXIgcmVxdWlyZWQpCiAgR0VUICAvaGVhbHRoeiAobm8gYXV0aDsgc2VydmljZSBzdGF0dXMgYW5kIHBlci1wcm9maWxlIGF1dGggc3RhdGUpCgpTZWN1cml0eSBiYXIgKGVuZm9yY2VkLCBub3QgYXNwaXJhdGlvbmFsKToKICAtIEJlYXJlciB0b2tlbiwgZnJvbSB0aGUgc2VydmljZSBlbnYgZmlsZSAoRklORE1ZX0JFQVJFUl9UT0tFTikuCiAgICBUaGUgc2VydmVyIHJlZnVzZXMgdG8gc3RhcnQgd2l0aG91dCBvbmUuCiAgLSBTZXJ2ZXItc2lkZSBkZXZpY2UtSUQgYWxsb3dsaXN0OiBhIHJlcXVlc3QgY2FuIG9ubHkgcmluZyBkZXZpY2UgSURzCiAgICBsaXN0ZWQgaW4gdGhlIHJlcXVlc3RpbmcgcHJvZmlsZSdzIGNvbmZpZy4gQW55dGhpbmcgZWxzZSBpcyByZWplY3RlZAogICAgYXMgaWYgdGhlIGRldmljZSBkaWQgbm90IGV4aXN0LgogIC0gUmF0ZSBsaW1pdGluZzogbWF4IDEgcmluZyBwZXIgMTAgc2Vjb25kcyBwZXIgcHJvZmlsZSwgbWF4IDEwIHJpbmdzCiAgICBwZXIgbWludXRlIG92ZXJhbGw7IGV4Y2VzcyByZXF1ZXN0cyBnZXQgNDI5IGFuZCBhcmUgbG9nZ2VkLgogIC0gQmluZHMgMC4wLjAuMDo4NzY1IChIQSBhbmQgdGhlIEVTUDMycyBhcmUgc2VwYXJhdGUgTEFOIGhvc3RzLCBzbwogICAgbG9vcGJhY2stb25seSB3aWxsIG5vdCB3b3JrKTsgdGhlIGJlYXJlciB0b2tlbiBpcyB3aGF0IG1ha2VzIHRoYXQKICAgIHNhZmUuIE5vIFRMUyBvbiB0aGUgTEFOIChzYW1lIHBvc3R1cmUgYXMgRVNQSG9tZSdzIG93biBBUEkpLgogIC0gTG9ncyBjb250YWluIHJlZGFjdGVkIGRldmljZSBJRHMgb25seSDigJQgbmV2ZXIgZnVsbCBkZXZpY2UgSURzLAogICAgYmVhcmVyIHRva2VucywgcGFzc3dvcmRzLCBvciBjb29raWVzLgoKUnVuIGl0IHdpdGggYGZpbmRteSBzZXJ2ZWAgKHNlZSBjbGkucHkpIG9yIGBweXRob24gLW0gZmluZG15X3NvdW5kLnNlcnZlcmAuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGFyZ3BhcnNlCmltcG9ydCBobWFjCmltcG9ydCBqc29uCmltcG9ydCBsb2dnaW5nCmltcG9ydCBzeXMKaW1wb3J0IHRocmVhZGluZwppbXBvcnQgdGltZQpmcm9tIGRhdGV0aW1lIGltcG9ydCBkYXRldGltZSwgdGltZXpvbmUKZnJvbSBodHRwLnNlcnZlciBpbXBvcnQgQmFzZUhUVFBSZXF1ZXN0SGFuZGxlciwgVGhyZWFkaW5nSFRUUFNlcnZlcgpmcm9tIHR5cGluZyBpbXBvcnQgQ2FsbGFibGUsIE9wdGlvbmFsCmZyb20gdXJsbGliLnBhcnNlIGltcG9ydCB1cmxzcGxpdAoKZnJvbSBmaW5kbXlfc291bmQgaW1wb3J0IGF1dGgKZnJvbSBmaW5kbXlfc291bmQuY2xpZW50IGltcG9ydCBGaW5kTXlDbGllbnQKZnJvbSBmaW5kbXlfc291bmQuY29uZmlnIGltcG9ydCBQcm9maWxlLCBTZXJ2ZXJDb25maWcsIGxvYWRfc2VydmVyX2NvbmZpZwpmcm9tIGZpbmRteV9zb3VuZC5lcnJvcnMgaW1wb3J0ICgKICAgIEF1dGhlbnRpY2F0aW9uRXJyb3IsCiAgICBEZXZpY2VOb3RGb3VuZEVycm9yLAogICAgRmluZE15U291bmRFcnJvciwKICAgIFByb2ZpbGVOb3RGb3VuZEVycm9yLAogICAgUmF0ZUxpbWl0ZWRFcnJvciwKICAgIFNlcnZpY2VVbmF2YWlsYWJsZUVycm9yLAogICAgU2Vzc2lvbkV4cGlyZWRFcnJvciwKICAgIFNvdW5kVW5hdmFpbGFibGVFcnJvciwKICAgIFR3b0ZhY3RvclJlcXVpcmVkRXJyb3IsCikKCl9MT0dHRVIgPSBsb2dnaW5nLmdldExvZ2dlcihfX25hbWVfXykKCk1BWF9CT0RZX0JZVEVTID0gNjQgKiAxMDI0ClBFUl9QUk9GSUxFX01JTl9TRUNPTkRTID0gMTAuMApHTE9CQUxfTUFYX1BFUl9NSU5VVEUgPSAxMAoKCmRlZiBfcmVkYWN0KGRldmljZV9pZDogc3RyKSAtPiBzdHI6CiAgICBpZiBsZW4oZGV2aWNlX2lkKSA8PSA4OgogICAgICAgIHJldHVybiAiKioqIgogICAgcmV0dXJuIGYie2RldmljZV9pZFs6NF19Li4ue2RldmljZV9pZFstNDpdfSIKCgpkZWYgX2lzbyh0aW1lc3RhbXA6IGZsb2F0IHwgTm9uZSkgLT4gc3RyIHwgTm9uZToKICAgIGlmIHRpbWVzdGFtcCBpcyBOb25lOgogICAgICAgIHJldHVybiBOb25lCiAgICByZXR1cm4gZGF0ZXRpbWUuZnJvbXRpbWVzdGFtcCh0aW1lc3RhbXAsIHR6PXRpbWV6b25lLnV0YykuaXNvZm9ybWF0KCkKCgpjbGFzcyBSYXRlTGltaXRlcjoKICAgICIiIlBlci1wcm9maWxlICsgZ2xvYmFsIHJpbmcgcmF0ZSBsaW1pdHMuIFRocmVhZC1zYWZlLiIiIgoKICAgIGRlZiBfX2luaXRfXygKICAgICAgICBzZWxmLAogICAgICAgIHBlcl9wcm9maWxlX21pbl9zZWNvbmRzOiBmbG9hdCA9IFBFUl9QUk9GSUxFX01JTl9TRUNPTkRTLAogICAgICAgIGdsb2JhbF9tYXhfcGVyX21pbnV0ZTogaW50ID0gR0xPQkFMX01BWF9QRVJfTUlOVVRFLAogICAgICAgIGNsb2NrOiBDYWxsYWJsZVtbXSwgZmxvYXRdID0gdGltZS5tb25vdG9uaWMsCiAgICApIC0+IE5vbmU6CiAgICAgICAgc2VsZi5fcGVyX3Byb2ZpbGVfbWluX3NlY29uZHMgPSBwZXJfcHJvZmlsZV9taW5fc2Vjb25kcwogICAgICAgIHNlbGYuX2dsb2JhbF9tYXhfcGVyX21pbnV0ZSA9IGdsb2JhbF9tYXhfcGVyX21pbnV0ZQogICAgICAgIHNlbGYuX2Nsb2NrID0gY2xvY2sKICAgICAgICBzZWxmLl9sb2NrID0gdGhyZWFkaW5nLkxvY2soKQogICAgICAgIHNlbGYuX2xhc3RfcmluZzogZGljdFtzdHIsIGZsb2F0XSA9IHt9CiAgICAgICAgc2VsZi5fcmVjZW50OiBsaXN0W2Zsb2F0XSA9IFtdICAjIHJpbmcgdGltZXN0YW1wcyB3aXRoaW4gdGhlIGxhc3QgbWludXRlCgogICAgZGVmIHRyeV9hY3F1aXJlKHNlbGYsIHByb2ZpbGU6IHN0cikgLT4gYm9vbDoKICAgICAgICAiIiJSZXR1cm4gVHJ1ZSBhbmQgcmVjb3JkIHRoZSByaW5nIGlmIGFsbG93ZWQsIGVsc2UgRmFsc2UuIiIiCiAgICAgICAgbm93ID0gc2VsZi5fY2xvY2soKQogICAgICAgIHdpdGggc2VsZi5fbG9jazoKICAgICAgICAgICAgbGFzdCA9IHNlbGYuX2xhc3RfcmluZy5nZXQocHJvZmlsZSkKICAgICAgICAgICAgaWYgbGFzdCBpcyBub3QgTm9uZSBhbmQgbm93IC0gbGFzdCA8IHNlbGYuX3Blcl9wcm9maWxlX21pbl9zZWNvbmRzOgogICAgICAgICAgICAgICAgcmV0dXJuIEZhbHNlCiAgICAgICAgICAgIHNlbGYuX3JlY2VudCA9IFt0IGZvciB0IGluIHNlbGYuX3JlY2VudCBpZiBub3cgLSB0IDwgNjAuMF0KICAgICAgICAgICAgaWYgbGVuKHNlbGYuX3JlY2VudCkgPj0gc2VsZi5fZ2xvYmFsX21heF9wZXJfbWludXRlOgogICAgICAgICAgICAgICAgcmV0dXJuIEZhbHNlCiAgICAgICAgICAgIHNlbGYuX2xhc3RfcmluZ1twcm9maWxlXSA9IG5vdwogICAgICAgICAgICBzZWxmLl9yZWNlbnQuYXBwZW5kKG5vdykKICAgICAgICAgICAgcmV0dXJuIFRydWUKCgpkZWYgX2RlZmF1bHRfY2xpZW50X2ZhY3RvcnkocHJvZmlsZTogUHJvZmlsZSkgLT4gRmluZE15Q2xpZW50OgogICAgIiIiQ3JlYXRlIGEgRmluZE15Q2xpZW50IGZvciBvbmUgcHJvZmlsZS4KCiAgICBOb24taW50ZXJhY3RpdmU6IHdpdGggYSB2YWxpZCB0cnVzdGVkIHNlc3Npb24gaW4gdGhlIHByb2ZpbGUncyBkYXRhCiAgICBkaXIsIG5vIHBhc3N3b3JkIGlzIG5lZWRlZC4gSWYgdGhlIHNlc3Npb24gaGFzIGV4cGlyZWQsIGxvZ2luIHJhaXNlcwogICAgYW5kIHRoZSBzZXJ2ZXIgcmVwb3J0cyBuZWVkc19yZWF1dGgg4oCUIHRoZSBwYXNzd29yZCBpcyBuZXZlciBzdG9yZWQKICAgIGF0IHJlc3QuCiAgICAiIiIKICAgIHNlcnZpY2UgPSBhdXRoLmxvZ2luKAogICAgICAgIHByb2ZpbGUuYXBwbGVfaWQsCiAgICAgICAgZGF0YV9kaXI9cHJvZmlsZS5kYXRhX2RpciwKICAgICAgICBpbnRlcmFjdGl2ZT1GYWxzZSwKICAgICAgICBzYXZlX3Bhc3N3b3JkPUZhbHNlLAogICAgKQogICAgcmV0dXJuIEZpbmRNeUNsaWVudChzZXJ2aWNlKQoKCmNsYXNzIFJpbmdTZXJ2aWNlOgogICAgIiIiUHJvZmlsZS1hd2FyZSByaW5nIGRpc3BhdGNoIHdpdGggYXV0aC1zdGF0ZSB0cmFja2luZy4KCiAgICBDbGllbnRzIGFyZSBjcmVhdGVkIGxhemlseSBwZXIgcHJvZmlsZSAoZmlyc3QgcmluZyBmb3IgdGhhdCBwcm9maWxlKQogICAgYW5kIGNhY2hlZDsgYSBwcm9maWxlIHdob3NlIHNlc3Npb24gaGFzIGV4cGlyZWQgcmVwb3J0cwogICAgbmVlZHNfcmVhdXRoIHVudGlsIGEgbGF0ZXIgcmluZyBzdWNjZWVkcy4KICAgICIiIgoKICAgIGRlZiBfX2luaXRfXygKICAgICAgICBzZWxmLAogICAgICAgIGNvbmZpZzogU2VydmVyQ29uZmlnLAogICAgICAgIGNsaWVudF9mYWN0b3J5OiBPcHRpb25hbFtDYWxsYWJsZVtbUHJvZmlsZV0sIEZpbmRNeUNsaWVudF1dID0gTm9uZSwKICAgICAgICByYXRlX2xpbWl0ZXI6IE9wdGlvbmFsW1JhdGVMaW1pdGVyXSA9IE5vbmUsCiAgICApIC0+IE5vbmU6CiAgICAgICAgc2VsZi5fY29uZmlnID0gY29uZmlnCiAgICAgICAgc2VsZi5fY2xpZW50X2ZhY3RvcnkgPSBjbGllbnRfZmFjdG9yeSBvciBfZGVmYXVsdF9jbGllbnRfZmFjdG9yeQogICAgICAgIHNlbGYuX2NsaWVudHM6IGRpY3Rbc3RyLCBGaW5kTXlDbGllbnRdID0ge30KICAgICAgICBzZWxmLl9sb2NrID0gdGhyZWFkaW5nLkxvY2soKQogICAgICAgIHNlbGYuX3JhdGVfbGltaXRlciA9IHJhdGVfbGltaXRlciBvciBSYXRlTGltaXRlcigpCiAgICAgICAgc2VsZi5fYXV0aF9zdGF0ZTogZGljdFtzdHIsIHN0cl0gPSB7CiAgICAgICAgICAgIG5hbWU6ICJvayIgZm9yIG5hbWUgaW4gY29uZmlnLnByb2ZpbGVzCiAgICAgICAgfQogICAgICAgIHNlbGYuX2xhc3RfcmluZzogZGljdFtzdHIsIGZsb2F0IHwgTm9uZV0gPSB7CiAgICAgICAgICAgIG5hbWU6IE5vbmUgZm9yIG5hbWUgaW4gY29uZmlnLnByb2ZpbGVzCiAgICAgICAgfQoKICAgIGRlZiByaW5nKAogICAgICAgIHNlbGYsIHByb2ZpbGU6IE9wdGlvbmFsW3N0cl0gPSBOb25lLCBkZXZpY2VfaWQ6IE9wdGlvbmFsW3N0cl0gPSBOb25lCiAgICApIC0+IGRpY3Q6CiAgICAgICAgIiIiUmluZyBhIGRldmljZS4gUmV0dXJucyBhIHNtYWxsIHJlc3VsdCBkaWN0IG9uIHN1Y2Nlc3MuCgogICAgICAgIFJhaXNlcyBQcm9maWxlTm90Rm91bmRFcnJvciwgRGV2aWNlTm90Rm91bmRFcnJvciwgVmFsdWVFcnJvcgogICAgICAgIChhbWJpZ3VvdXMgb3IgbWlzc2luZyB0YXJnZXQpLCBSYXRlTGltaXRlZEVycm9yLCBvciB0aGUKICAgICAgICBhdXRoL3NlcnZpY2UgZXJyb3JzIGZyb20gdGhlIGNsaWVudCBsYXllci4KICAgICAgICAiIiIKICAgICAgICB0YXJnZXRfcHJvZmlsZSwgdGFyZ2V0X2RldmljZSA9IHNlbGYuX3Jlc29sdmUocHJvZmlsZSwgZGV2aWNlX2lkKQogICAgICAgIGlmIG5vdCBzZWxmLl9yYXRlX2xpbWl0ZXIudHJ5X2FjcXVpcmUodGFyZ2V0X3Byb2ZpbGUubmFtZSk6CiAgICAgICAgICAgIF9MT0dHRVIud2FybmluZygKICAgICAgICAgICAgICAgICJSYXRlIGxpbWl0IGV4Y2VlZGVkIGZvciBwcm9maWxlICVzIiwgdGFyZ2V0X3Byb2ZpbGUubmFtZQogICAgICAgICAgICApCiAgICAgICAgICAgIHJhaXNlIFJhdGVMaW1pdGVkRXJyb3IoCiAgICAgICAgICAgICAgICAiUmF0ZSBsaW1pdCBleGNlZWRlZC4gVHJ5IGFnYWluIGluIGEgZmV3IHNlY29uZHMuIgogICAgICAgICAgICApCiAgICAgICAgdHJ5OgogICAgICAgICAgICBjbGllbnQgPSBzZWxmLl9jbGllbnRfZm9yKHRhcmdldF9wcm9maWxlKQogICAgICAgICAgICBjbGllbnQucGxheV9zb3VuZCh0YXJnZXRfZGV2aWNlKQogICAgICAgIGV4Y2VwdCAoCiAgICAgICAgICAgIEF1dGhlbnRpY2F0aW9uRXJyb3IsCiAgICAgICAgICAgIFR3b0ZhY3RvclJlcXVpcmVkRXJyb3IsCiAgICAgICAgICAgIFNlc3Npb25FeHBpcmVkRXJyb3IsCiAgICAgICAgKToKICAgICAgICAgICAgc2VsZi5fc2V0X2F1dGhfc3RhdGUodGFyZ2V0X3Byb2ZpbGUubmFtZSwgIm5lZWRzX3JlYXV0aCIpCiAgICAgICAgICAgIHJhaXNlCiAgICAgICAgc2VsZi5fc2V0X2F1dGhfc3RhdGUodGFyZ2V0X3Byb2ZpbGUubmFtZSwgIm9rIikKICAgICAgICBzZWxmLl9sYXN0X3JpbmdbdGFyZ2V0X3Byb2ZpbGUubmFtZV0gPSB0aW1lLnRpbWUoKQogICAgICAgIF9MT0dHRVIuaW5mbygKICAgICAgICAgICAgIlBsYXkgU291bmQgdHJpZ2dlcmVkIGZvciBwcm9maWxlICVzIGRldmljZSAlcyIsCiAgICAgICAgICAgIHRhcmdldF9wcm9maWxlLm5hbWUsCiAgICAgICAgICAgIF9yZWRhY3QodGFyZ2V0X2RldmljZSksCiAgICAgICAgKQogICAgICAgIHJldHVybiB7CiAgICAgICAgICAgICJzdGF0dXMiOiAib2siLAogICAgICAgICAgICAicHJvZmlsZSI6IHRhcmdldF9wcm9maWxlLm5hbWUsCiAgICAgICAgICAgICJkZXZpY2VfaWQiOiBfcmVkYWN0KHRhcmdldF9kZXZpY2UpLAogICAgICAgIH0KCiAgICBkZWYgaGVhbHRoKHNlbGYpIC0+IGRpY3Q6CiAgICAgICAgIiIiU2VydmljZSBzdGF0dXMgZm9yIEdFVCAvaGVhbHRoei4iIiIKICAgICAgICBhdXRoX3N0YXRlID0gKAogICAgICAgICAgICAibmVlZHNfcmVhdXRoIgogICAgICAgICAgICBpZiAibmVlZHNfcmVhdXRoIiBpbiBzZWxmLl9hdXRoX3N0YXRlLnZhbHVlcygpCiAgICAgICAgICAgIGVsc2UgIm9rIgogICAgICAgICkKICAgICAgICBwcm9maWxlcyA9IHsKICAgICAgICAgICAgbmFtZTogewogICAgICAgICAgICAgICAgImF1dGgiOiBzZWxmLl9hdXRoX3N0YXRlW25hbWVdLAogICAgICAgICAgICAgICAgImxhc3RfcmluZyI6IF9pc28oc2VsZi5fbGFzdF9yaW5nW25hbWVdKSwKICAgICAgICAgICAgfQogICAgICAgICAgICBmb3IgbmFtZSBpbiBzZWxmLl9jb25maWcucHJvZmlsZXMKICAgICAgICB9CiAgICAgICAgbGFzdCA9IG1heCgKICAgICAgICAgICAgKHQgZm9yIHQgaW4gc2VsZi5fbGFzdF9yaW5nLnZhbHVlcygpIGlmIHQgaXMgbm90IE5vbmUpLAogICAgICAgICAgICBkZWZhdWx0PU5vbmUsCiAgICAgICAgKQogICAgICAgIHJldHVybiB7CiAgICAgICAgICAgICJzdGF0dXMiOiAib2siLAogICAgICAgICAgICAiYXV0aCI6IGF1dGhfc3RhdGUsCiAgICAgICAgICAgICJsYXN0X3JpbmciOiBfaXNvKGxhc3QpLAogICAgICAgICAgICAicHJvZmlsZXMiOiBwcm9maWxlcywKICAgICAgICB9CgogICAgZGVmIF9yZXNvbHZlKAogICAgICAgIHNlbGYsIHByb2ZpbGU6IE9wdGlvbmFsW3N0cl0sIGRldmljZV9pZDogT3B0aW9uYWxbc3RyXQogICAgKSAtPiB0dXBsZVtQcm9maWxlLCBzdHJdOgogICAgICAgIGlmIHByb2ZpbGUgaXMgbm90IE5vbmU6CiAgICAgICAgICAgIHRhcmdldCA9IHNlbGYuX2NvbmZpZy5wcm9maWxlcy5nZXQocHJvZmlsZSkKICAgICAgICAgICAgaWYgdGFyZ2V0IGlzIE5vbmU6CiAgICAgICAgICAgICAgICByYWlzZSBQcm9maWxlTm90Rm91bmRFcnJvcihwcm9maWxlKQogICAgICAgICAgICBpZiBkZXZpY2VfaWQgaXMgbm90IE5vbmU6CiAgICAgICAgICAgICAgICBpZiBkZXZpY2VfaWQgbm90IGluIHRhcmdldC5kZXZpY2VfaWRzOgogICAgICAgICAgICAgICAgICAgIHJhaXNlIERldmljZU5vdEZvdW5kRXJyb3IoZGV2aWNlX2lkKQogICAgICAgICAgICAgICAgcmV0dXJuIHRhcmdldCwgZGV2aWNlX2lkCiAgICAgICAgICAgIGlmIGxlbih0YXJnZXQuZGV2aWNlX2lkcykgPT0gMToKICAgICAgICAgICAgICAgIHJldHVybiB0YXJnZXQsIG5leHQoaXRlcih0YXJnZXQuZGV2aWNlX2lkcykpCiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoCiAgICAgICAgICAgICAgICBmIlByb2ZpbGUge3Byb2ZpbGUhcn0gaGFzIHtsZW4odGFyZ2V0LmRldmljZV9pZHMpfSBkZXZpY2VzOyAiCiAgICAgICAgICAgICAgICAic3BlY2lmeSBkZXZpY2VfaWQuIgogICAgICAgICAgICApCiAgICAgICAgaWYgZGV2aWNlX2lkIGlzIG5vdCBOb25lOgogICAgICAgICAgICBmb3IgY2FuZGlkYXRlIGluIHNlbGYuX2NvbmZpZy5wcm9maWxlcy52YWx1ZXMoKToKICAgICAgICAgICAgICAgIGlmIGRldmljZV9pZCBpbiBjYW5kaWRhdGUuZGV2aWNlX2lkczoKICAgICAgICAgICAgICAgICAgICByZXR1cm4gY2FuZGlkYXRlLCBkZXZpY2VfaWQKICAgICAgICAgICAgcmFpc2UgRGV2aWNlTm90Rm91bmRFcnJvcihkZXZpY2VfaWQpCiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigiU3BlY2lmeSBwcm9maWxlIG9yIGRldmljZV9pZC4iKQoKICAgIGRlZiBfY2xpZW50X2ZvcihzZWxmLCBwcm9maWxlOiBQcm9maWxlKSAtPiBGaW5kTXlDbGllbnQ6CiAgICAgICAgd2l0aCBzZWxmLl9sb2NrOgogICAgICAgICAgICBjbGllbnQgPSBzZWxmLl9jbGllbnRzLmdldChwcm9maWxlLm5hbWUpCiAgICAgICAgICAgIGlmIGNsaWVudCBpcyBOb25lOgogICAgICAgICAgICAgICAgY2xpZW50ID0gc2VsZi5fY2xpZW50X2ZhY3RvcnkocHJvZmlsZSkKICAgICAgICAgICAgICAgIHNlbGYuX2NsaWVudHNbcHJvZmlsZS5uYW1lXSA9IGNsaWVudAogICAgICAgICAgICByZXR1cm4gY2xpZW50CgogICAgZGVmIF9zZXRfYXV0aF9zdGF0ZShzZWxmLCBwcm9maWxlOiBzdHIsIHN0YXRlOiBzdHIpIC0+IE5vbmU6CiAgICAgICAgd2l0aCBzZWxmLl9sb2NrOgogICAgICAgICAgICBzZWxmLl9hdXRoX3N0YXRlW3Byb2ZpbGVdID0gc3RhdGUKCgpjbGFzcyBfSGFuZGxlcihCYXNlSFRUUFJlcXVlc3RIYW5kbGVyKToKICAgICIiIkhUVFAgcmVxdWVzdCBoYW5kbGVyLiBUaGUgc2VydmVyIG9iamVjdCBjYXJyaWVzIHRoZSBzZXJ2aWNlLiIiIgoKICAgIHNlcnZlcl92ZXJzaW9uID0gImZpbmRteS1zb3VuZCIKICAgIHN5c192ZXJzaW9uID0gIiIKCiAgICBkZWYgbG9nX21lc3NhZ2Uoc2VsZiwgZm10OiBzdHIsICphcmdzKSAtPiBOb25lOgogICAgICAgIF9MT0dHRVIuaW5mbygiJXMgLSAlcyIsIHNlbGYuYWRkcmVzc19zdHJpbmcoKSwgZm10ICUgYXJncykKCiAgICBkZWYgZG9fR0VUKHNlbGYpIC0+IE5vbmU6CiAgICAgICAgaWYgdXJsc3BsaXQoc2VsZi5wYXRoKS5wYXRoID09ICIvaGVhbHRoeiI6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbigyMDAsIHNlbGYuc2VydmVyLnNlcnZpY2UuaGVhbHRoKCkpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgc2VsZi5fc2VuZF9qc29uKDQwNCwgeyJlcnJvciI6ICJub3RfZm91bmQifSkKCiAgICBkZWYgZG9fUE9TVChzZWxmKSAtPiBOb25lOgogICAgICAgIGlmIHVybHNwbGl0KHNlbGYucGF0aCkucGF0aCAhPSAiL3JpbmciOgogICAgICAgICAgICBzZWxmLl9zZW5kX2pzb24oNDA0LCB7ImVycm9yIjogIm5vdF9mb3VuZCJ9KQogICAgICAgICAgICByZXR1cm4KICAgICAgICBpZiBub3Qgc2VsZi5fY2hlY2tfYmVhcmVyKCk6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbig0MDEsIHsiZXJyb3IiOiAidW5hdXRob3JpemVkIn0pCiAgICAgICAgICAgIHJldHVybgogICAgICAgIHRyeToKICAgICAgICAgICAgcGF5bG9hZCA9IHNlbGYuX3JlYWRfanNvbigpCiAgICAgICAgZXhjZXB0IFZhbHVlRXJyb3IgYXMgZXhjOgogICAgICAgICAgICBzZWxmLl9zZW5kX2pzb24oNDAwLCB7ImVycm9yIjogImJhZF9yZXF1ZXN0IiwgImRldGFpbCI6IHN0cihleGMpfSkKICAgICAgICAgICAgcmV0dXJuCiAgICAgICAgaWYgbm90IGlzaW5zdGFuY2UocGF5bG9hZCwgZGljdCk6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbigKICAgICAgICAgICAgICAgIDQwMCwgeyJlcnJvciI6ICJiYWRfcmVxdWVzdCIsICJkZXRhaWwiOiAiSlNPTiBib2R5IG11c3QgYmUgYW4gb2JqZWN0In0KICAgICAgICAgICAgKQogICAgICAgICAgICByZXR1cm4KICAgICAgICBwcm9maWxlID0gcGF5bG9hZC5nZXQoInByb2ZpbGUiKQogICAgICAgIGRldmljZV9pZCA9IHBheWxvYWQuZ2V0KCJkZXZpY2VfaWQiKQogICAgICAgIGlmIHByb2ZpbGUgaXMgbm90IE5vbmUgYW5kIG5vdCBpc2luc3RhbmNlKHByb2ZpbGUsIHN0cik6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbigKICAgICAgICAgICAgICAgIDQwMCwgeyJlcnJvciI6ICJiYWRfcmVxdWVzdCIsICJkZXRhaWwiOiAicHJvZmlsZSBtdXN0IGJlIGEgc3RyaW5nIn0KICAgICAgICAgICAgKQogICAgICAgICAgICByZXR1cm4KICAgICAgICBpZiBkZXZpY2VfaWQgaXMgbm90IE5vbmUgYW5kIG5vdCBpc2luc3RhbmNlKGRldmljZV9pZCwgc3RyKToKICAgICAgICAgICAgc2VsZi5fc2VuZF9qc29uKAogICAgICAgICAgICAgICAgNDAwLAogICAgICAgICAgICAgICAgeyJlcnJvciI6ICJiYWRfcmVxdWVzdCIsICJkZXRhaWwiOiAiZGV2aWNlX2lkIG11c3QgYmUgYSBzdHJpbmcifSwKICAgICAgICAgICAgKQogICAgICAgICAgICByZXR1cm4KICAgICAgICB0cnk6CiAgICAgICAgICAgIHJlc3VsdCA9IHNlbGYuc2VydmVyLnNlcnZpY2UucmluZyhwcm9maWxlPXByb2ZpbGUsIGRldmljZV9pZD1kZXZpY2VfaWQpCiAgICAgICAgZXhjZXB0IFJhdGVMaW1pdGVkRXJyb3I6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbig0MjksIHsiZXJyb3IiOiAicmF0ZV9saW1pdGVkIn0pCiAgICAgICAgZXhjZXB0IFByb2ZpbGVOb3RGb3VuZEVycm9yOgogICAgICAgICAgICBzZWxmLl9zZW5kX2pzb24oNDA0LCB7ImVycm9yIjogIm5vdF9mb3VuZCIsICJkZXRhaWwiOiAidW5rbm93biBwcm9maWxlIn0pCiAgICAgICAgZXhjZXB0IERldmljZU5vdEZvdW5kRXJyb3I6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbig0MDQsIHsiZXJyb3IiOiAibm90X2ZvdW5kIiwgImRldGFpbCI6ICJ1bmtub3duIGRldmljZSJ9KQogICAgICAgIGV4Y2VwdCAoCiAgICAgICAgICAgIEF1dGhlbnRpY2F0aW9uRXJyb3IsCiAgICAgICAgICAgIFR3b0ZhY3RvclJlcXVpcmVkRXJyb3IsCiAgICAgICAgICAgIFNlc3Npb25FeHBpcmVkRXJyb3IsCiAgICAgICAgKToKICAgICAgICAgICAgc2VsZi5fc2VuZF9qc29uKDUwMywgeyJlcnJvciI6ICJuZWVkc19yZWF1dGgifSkKICAgICAgICBleGNlcHQgKFNlcnZpY2VVbmF2YWlsYWJsZUVycm9yLCBTb3VuZFVuYXZhaWxhYmxlRXJyb3IpOgogICAgICAgICAgICBzZWxmLl9zZW5kX2pzb24oNTAzLCB7ImVycm9yIjogInNlcnZpY2VfdW5hdmFpbGFibGUifSkKICAgICAgICBleGNlcHQgVmFsdWVFcnJvciBhcyBleGM6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbig0MDAsIHsiZXJyb3IiOiAiYmFkX3JlcXVlc3QiLCAiZGV0YWlsIjogc3RyKGV4Yyl9KQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHNlbGYuX3NlbmRfanNvbigyMDAsIHJlc3VsdCkKCiAgICBkZWYgX2NoZWNrX2JlYXJlcihzZWxmKSAtPiBib29sOgogICAgICAgIGhlYWRlciA9IHNlbGYuaGVhZGVycy5nZXQoIkF1dGhvcml6YXRpb24iLCAiIikKICAgICAgICBpZiBub3QgaGVhZGVyLnN0YXJ0c3dpdGgoIkJlYXJlciAiKToKICAgICAgICAgICAgcmV0dXJuIEZhbHNlCiAgICAgICAgdG9rZW4gPSBoZWFkZXJbbGVuKCJCZWFyZXIgIik6XS5zdHJpcCgpCiAgICAgICAgaWYgbm90IHRva2VuOgogICAgICAgICAgICByZXR1cm4gRmFsc2UKICAgICAgICByZXR1cm4gaG1hYy5jb21wYXJlX2RpZ2VzdCh0b2tlbiwgc2VsZi5zZXJ2ZXIuYmVhcmVyX3Rva2VuKQoKICAgIGRlZiBfcmVhZF9qc29uKHNlbGYpIC0+IG9iamVjdDoKICAgICAgICBsZW5ndGggPSBzZWxmLmhlYWRlcnMuZ2V0KCJDb250ZW50LUxlbmd0aCIpCiAgICAgICAgaWYgbGVuZ3RoIGlzIE5vbmU6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoIm1pc3NpbmcgQ29udGVudC1MZW5ndGgiKQogICAgICAgIHRyeToKICAgICAgICAgICAgc2l6ZSA9IGludChsZW5ndGgpCiAgICAgICAgZXhjZXB0IFZhbHVlRXJyb3IgYXMgZXhjOgogICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCJpbnZhbGlkIENvbnRlbnQtTGVuZ3RoIikgZnJvbSBleGMKICAgICAgICBpZiBzaXplID4gTUFYX0JPRFlfQllURVM6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoInJlcXVlc3QgYm9keSB0b28gbGFyZ2UiKQogICAgICAgIHJhdyA9IHNlbGYucmZpbGUucmVhZChzaXplKQogICAgICAgIHRyeToKICAgICAgICAgICAgcmV0dXJuIGpzb24ubG9hZHMocmF3LmRlY29kZSgidXRmLTgiKSkKICAgICAgICBleGNlcHQgKFVuaWNvZGVEZWNvZGVFcnJvciwganNvbi5KU09ORGVjb2RlRXJyb3IpIGFzIGV4YzoKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigiYm9keSBpcyBub3QgdmFsaWQgSlNPTiIpIGZyb20gZXhjCgogICAgZGVmIF9zZW5kX2pzb24oc2VsZiwgc3RhdHVzOiBpbnQsIHBheWxvYWQ6IGRpY3QpIC0+IE5vbmU6CiAgICAgICAgYm9keSA9IGpzb24uZHVtcHMocGF5bG9hZCkuZW5jb2RlKCJ1dGYtOCIpCiAgICAgICAgc2VsZi5zZW5kX3Jlc3BvbnNlKHN0YXR1cykKICAgICAgICBzZWxmLnNlbmRfaGVhZGVyKCJDb250ZW50LVR5cGUiLCAiYXBwbGljYXRpb24vanNvbiIpCiAgICAgICAgc2VsZi5zZW5kX2hlYWRlcigiQ29udGVudC1MZW5ndGgiLCBzdHIobGVuKGJvZHkpKSkKICAgICAgICBzZWxmLmVuZF9oZWFkZXJzKCkKICAgICAgICBzZWxmLndmaWxlLndyaXRlKGJvZHkpCgoKY2xhc3MgX1NlcnZlcihUaHJlYWRpbmdIVFRQU2VydmVyKToKICAgICIiIlRocmVhZGluZyBIVFRQIHNlcnZlciBjYXJyeWluZyB0aGUgc2VydmljZSBhbmQgYmVhcmVyIHRva2VuLiIiIgoKICAgIGRhZW1vbl90aHJlYWRzID0gVHJ1ZQogICAgYWxsb3dfcmV1c2VfYWRkcmVzcyA9IFRydWUKCiAgICBkZWYgX19pbml0X18oCiAgICAgICAgc2VsZiwgYWRkcmVzczogdHVwbGVbc3RyLCBpbnRdLCBzZXJ2aWNlOiBSaW5nU2VydmljZSwgYmVhcmVyX3Rva2VuOiBzdHIKICAgICkgLT4gTm9uZToKICAgICAgICBzZWxmLnNlcnZpY2UgPSBzZXJ2aWNlCiAgICAgICAgc2VsZi5iZWFyZXJfdG9rZW4gPSBiZWFyZXJfdG9rZW4KICAgICAgICBzdXBlcigpLl9faW5pdF9fKGFkZHJlc3MsIF9IYW5kbGVyKQoKCmRlZiBjcmVhdGVfc2VydmVyKAogICAgY29uZmlnOiBTZXJ2ZXJDb25maWcsCiAgICBjbGllbnRfZmFjdG9yeTogT3B0aW9uYWxbQ2FsbGFibGVbW1Byb2ZpbGVdLCBGaW5kTXlDbGllbnRdXSA9IE5vbmUsCikgLT4gX1NlcnZlcjoKICAgICIiIkNyZWF0ZSAoYnV0IGRvIG5vdCBzdGFydCkgdGhlIEhUVFAgc2VydmVyLiIiIgogICAgc2VydmljZSA9IFJpbmdTZXJ2aWNlKGNvbmZpZywgY2xpZW50X2ZhY3RvcnkpCiAgICByZXR1cm4gX1NlcnZlcigoY29uZmlnLmhvc3QsIGNvbmZpZy5wb3J0KSwgc2VydmljZSwgY29uZmlnLmJlYXJlcl90b2tlbikKCgpkZWYgc2VydmUoCiAgICBjb25maWc6IFNlcnZlckNvbmZpZywKICAgIGNsaWVudF9mYWN0b3J5OiBPcHRpb25hbFtDYWxsYWJsZVtbUHJvZmlsZV0sIEZpbmRNeUNsaWVudF1dID0gTm9uZSwKKSAtPiBOb25lOgogICAgIiIiU2VydmUgZm9yZXZlciAodW50aWwgQ3RybC1DKS4iIiIKICAgIHNlcnZlciA9IGNyZWF0ZV9zZXJ2ZXIoY29uZmlnLCBjbGllbnRfZmFjdG9yeSkKICAgIF9MT0dHRVIuaW5mbygiZmluZG15LXNvdW5kIGxpc3RlbmluZyBvbiAlczolZCIsIGNvbmZpZy5ob3N0LCBjb25maWcucG9ydCkKICAgIHRyeToKICAgICAgICBzZXJ2ZXIuc2VydmVfZm9yZXZlcigpCiAgICBleGNlcHQgS2V5Ym9hcmRJbnRlcnJ1cHQ6CiAgICAgICAgcGFzcwogICAgZmluYWxseToKICAgICAgICBzZXJ2ZXIuc2h1dGRvd24oKQogICAgICAgIHNlcnZlci5zZXJ2ZXJfY2xvc2UoKQoKCmRlZiBtYWluKGFyZ3Y6IGxpc3Rbc3RyXSB8IE5vbmUgPSBOb25lKSAtPiBpbnQ6CiAgICAiIiJFbnRyeSBwb2ludCBmb3IgYHB5dGhvbiAtbSBmaW5kbXlfc291bmQuc2VydmVyYC4iIiIKICAgIHBhcnNlciA9IGFyZ3BhcnNlLkFyZ3VtZW50UGFyc2VyKAogICAgICAgIHByb2c9ImZpbmRteS1zb3VuZC1zZXJ2ZXIiLAogICAgICAgIGRlc2NyaXB0aW9uPSJBdXRoZW50aWNhdGVkIEhUVFAgc2VydmljZTogcmluZyBBcHBsZSBkZXZpY2VzIHZpYSBpQ2xvdWQuIiwKICAgICkKICAgIHBhcnNlci5hZGRfYXJndW1lbnQoIi0tY29uZmlnLWRpciIsIGRlZmF1bHQ9Tm9uZSkKICAgIHBhcnNlci5hZGRfYXJndW1lbnQoIi0tZGF0YS1kaXIiLCBkZWZhdWx0PU5vbmUpCiAgICBwYXJzZXIuYWRkX2FyZ3VtZW50KCItLWJpbmQiLCBkZWZhdWx0PU5vbmUpCiAgICBwYXJzZXIuYWRkX2FyZ3VtZW50KCItLXBvcnQiLCB0eXBlPWludCwgZGVmYXVsdD1Ob25lKQogICAgYXJncyA9IHBhcnNlci5wYXJzZV9hcmdzKGFyZ3YpCiAgICB0cnk6CiAgICAgICAgY29uZmlnID0gbG9hZF9zZXJ2ZXJfY29uZmlnKAogICAgICAgICAgICBjb25maWdfZGlyPWFyZ3MuY29uZmlnX2RpciwKICAgICAgICAgICAgZGF0YV9kaXI9YXJncy5kYXRhX2RpciwKICAgICAgICAgICAgaG9zdD1hcmdzLmJpbmQsCiAgICAgICAgICAgIHBvcnQ9YXJncy5wb3J0LAogICAgICAgICkKICAgIGV4Y2VwdCBWYWx1ZUVycm9yIGFzIGV4YzoKICAgICAgICBwcmludChmIkVycm9yOiB7ZXhjfSIsIGZpbGU9c3lzLnN0ZGVycikKICAgICAgICByZXR1cm4gMQogICAgbG9nZ2luZy5iYXNpY0NvbmZpZygKICAgICAgICBsZXZlbD1sb2dnaW5nLklORk8sIGZvcm1hdD0iJShsZXZlbG5hbWUpczolKG5hbWUpczolKG1lc3NhZ2UpcyIKICAgICkKICAgIHNlcnZlKGNvbmZpZykKICAgIHJldHVybiAwCgoKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIHJhaXNlIFN5c3RlbUV4aXQobWFpbigpKQo=
+"""Stdlib-only HTTP service for findmy-sound.
+
+Exposes a small authenticated API so Home Assistant (or any HTTP client
+on the LAN) can trigger Play Sound without SSH:
+
+  POST /ring    {"profile": "me"} or {"device_id": "..."} (Bearer required)
+  GET  /healthz (no auth; service status and per-profile auth state)
+
+Security bar (enforced, not aspirational):
+  - Bearer token, from the service env file (FINDMY_BEARER_TOKEN).
+    The server refuses to start without one.
+  - Server-side device-ID allowlist: a request can only ring device IDs
+    listed in the requesting profile's config. Anything else is rejected
+    as if the device did not exist.
+  - Rate limiting: max 1 ring per 10 seconds per profile, max 10 rings
+    per minute overall; excess requests get 429 and are logged.
+  - Binds 0.0.0.0:8765 (HA and the ESP32s are separate LAN hosts, so
+    loopback-only will not work); the bearer token is what makes that
+    safe. No TLS on the LAN (same posture as ESPHome's own API).
+  - Logs contain redacted device IDs only — never full device IDs,
+    bearer tokens, passwords, or cookies.
+
+Run it with `findmy serve` (see cli.py) or `python -m findmy_sound.server`.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hmac
+import json
+import logging
+import sys
+import threading
+import time
+from datetime import datetime, timezone
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from typing import Callable, Optional
+from urllib.parse import urlsplit
+
+from findmy_sound import auth
+from findmy_sound.client import FindMyClient
+from findmy_sound.config import Profile, ServerConfig, load_server_config
+from findmy_sound.errors import (
+    AuthenticationError,
+    DeviceNotFoundError,
+    FindMySoundError,
+    ProfileNotFoundError,
+    RateLimitedError,
+    ServiceUnavailableError,
+    SessionExpiredError,
+    SoundUnavailableError,
+    TwoFactorRequiredError,
+)
+
+_LOGGER = logging.getLogger(__name__)
+
+MAX_BODY_BYTES = 64 * 1024
+PER_PROFILE_MIN_SECONDS = 10.0
+GLOBAL_MAX_PER_MINUTE = 10
+
+
+def _redact(device_id: str) -> str:
+    if len(device_id) <= 8:
+        return "***"
+    return f"{device_id[:4]}...{device_id[-4:]}"
+
+
+def _iso(timestamp: float | None) -> str | None:
+    if timestamp is None:
+        return None
+    return datetime.fromtimestamp(timestamp, tz=timezone.utc).isoformat()
+
+
+class RateLimiter:
+    """Per-profile + global ring rate limits. Thread-safe."""
+
+    def __init__(
+        self,
+        per_profile_min_seconds: float = PER_PROFILE_MIN_SECONDS,
+        global_max_per_minute: int = GLOBAL_MAX_PER_MINUTE,
+        clock: Callable[[], float] = time.monotonic,
+    ) -> None:
+        self._per_profile_min_seconds = per_profile_min_seconds
+        self._global_max_per_minute = global_max_per_minute
+        self._clock = clock
+        self._lock = threading.Lock()
+        self._last_ring: dict[str, float] = {}
+        self._recent: list[float] = []  # ring timestamps within the last minute
+
+    def try_acquire(self, profile: str) -> bool:
+        """Return True and record the ring if allowed, else False."""
+        now = self._clock()
+        with self._lock:
+            last = self._last_ring.get(profile)
+            if last is not None and now - last < self._per_profile_min_seconds:
+                return False
+            self._recent = [t for t in self._recent if now - t < 60.0]
+            if len(self._recent) >= self._global_max_per_minute:
+                return False
+            self._last_ring[profile] = now
+            self._recent.append(now)
+            return True
+
+
+def _default_client_factory(profile: Profile) -> FindMyClient:
+    """Create a FindMyClient for one profile.
+
+    Non-interactive: with a valid trusted session in the profile's data
+    dir, no password is needed. If the session has expired, login raises
+    and the server reports needs_reauth — the password is never stored
+    at rest.
+    """
+    service = auth.login(
+        profile.apple_id,
+        data_dir=profile.data_dir,
+        interactive=False,
+        save_password=False,
+    )
+    return FindMyClient(service)
+
+
+class RingService:
+    """Profile-aware ring dispatch with auth-state tracking.
+
+    Clients are created lazily per profile (first ring for that profile)
+    and cached; a profile whose session has expired reports
+    needs_reauth until a later ring succeeds.
+    """
+
+    def __init__(
+        self,
+        config: ServerConfig,
+        client_factory: Optional[Callable[[Profile], FindMyClient]] = None,
+        rate_limiter: Optional[RateLimiter] = None,
+    ) -> None:
+        self._config = config
+        self._client_factory = client_factory or _default_client_factory
+        self._clients: dict[str, FindMyClient] = {}
+        self._lock = threading.Lock()
+        self._rate_limiter = rate_limiter or RateLimiter()
+        self._auth_state: dict[str, str] = {
+            name: "ok" for name in config.profiles
+        }
+        self._last_ring: dict[str, float | None] = {
+            name: None for name in config.profiles
+        }
+
+    def ring(
+        self, profile: Optional[str] = None, device_id: Optional[str] = None
+    ) -> dict:
+        """Ring a device. Returns a small result dict on success.
+
+        Raises ProfileNotFoundError, DeviceNotFoundError, ValueError
+        (ambiguous or missing target), RateLimitedError, or the
+        auth/service errors from the client layer.
+        """
+        target_profile, target_device = self._resolve(profile, device_id)
+        if not self._rate_limiter.try_acquire(target_profile.name):
+            _LOGGER.warning(
+                "Rate limit exceeded for profile %s", target_profile.name
+            )
+            raise RateLimitedError(
+                "Rate limit exceeded. Try again in a few seconds."
+            )
+        try:
+            client = self._client_for(target_profile)
+            client.play_sound(target_device)
+        except (
+            AuthenticationError,
+            TwoFactorRequiredError,
+            SessionExpiredError,
+        ):
+            self._set_auth_state(target_profile.name, "needs_reauth")
+            raise
+        self._set_auth_state(target_profile.name, "ok")
+        self._last_ring[target_profile.name] = time.time()
+        _LOGGER.info(
+            "Play Sound triggered for profile %s device %s",
+            target_profile.name,
+            _redact(target_device),
+        )
+        return {
+            "status": "ok",
+            "profile": target_profile.name,
+            "device_id": _redact(target_device),
+        }
+
+    def health(self) -> dict:
+        """Service status for GET /healthz."""
+        auth_state = (
+            "needs_reauth"
+            if "needs_reauth" in self._auth_state.values()
+            else "ok"
+        )
+        profiles = {
+            name: {
+                "auth": self._auth_state[name],
+                "last_ring": _iso(self._last_ring[name]),
+            }
+            for name in self._config.profiles
+        }
+        last = max(
+            (t for t in self._last_ring.values() if t is not None),
+            default=None,
+        )
+        return {
+            "status": "ok",
+            "auth": auth_state,
+            "last_ring": _iso(last),
+            "profiles": profiles,
+        }
+
+    def _resolve(
+        self, profile: Optional[str], device_id: Optional[str]
+    ) -> tuple[Profile, str]:
+        if profile is not None:
+            target = self._config.profiles.get(profile)
+            if target is None:
+                raise ProfileNotFoundError(profile)
+            if device_id is not None:
+                if device_id not in target.device_ids:
+                    raise DeviceNotFoundError(device_id)
+                return target, device_id
+            if len(target.device_ids) == 1:
+                return target, next(iter(target.device_ids))
+            raise ValueError(
+                f"Profile {profile!r} has {len(target.device_ids)} devices; "
+                "specify device_id."
+            )
+        if device_id is not None:
+            for candidate in self._config.profiles.values():
+                if device_id in candidate.device_ids:
+                    return candidate, device_id
+            raise DeviceNotFoundError(device_id)
+        raise ValueError("Specify profile or device_id.")
+
+    def _client_for(self, profile: Profile) -> FindMyClient:
+        with self._lock:
+            client = self._clients.get(profile.name)
+            if client is None:
+                client = self._client_factory(profile)
+                self._clients[profile.name] = client
+            return client
+
+    def _set_auth_state(self, profile: str, state: str) -> None:
+        with self._lock:
+            self._auth_state[profile] = state
+
+
+class _Handler(BaseHTTPRequestHandler):
+    """HTTP request handler. The server object carries the service."""
+
+    server_version = "findmy-sound"
+    sys_version = ""
+
+    def log_message(self, fmt: str, *args) -> None:
+        _LOGGER.info("%s - %s", self.address_string(), fmt % args)
+
+    def do_GET(self) -> None:
+        if urlsplit(self.path).path == "/healthz":
+            self._send_json(200, self.server.service.health())
+        else:
+            self._send_json(404, {"error": "not_found"})
+
+    def do_POST(self) -> None:
+        if urlsplit(self.path).path != "/ring":
+            self._send_json(404, {"error": "not_found"})
+            return
+        if not self._check_bearer():
+            self._send_json(401, {"error": "unauthorized"})
+            return
+        try:
+            payload = self._read_json()
+        except ValueError as exc:
+            self._send_json(400, {"error": "bad_request", "detail": str(exc)})
+            return
+        if not isinstance(payload, dict):
+            self._send_json(
+                400, {"error": "bad_request", "detail": "JSON body must be an object"}
+            )
+            return
+        profile = payload.get("profile")
+        device_id = payload.get("device_id")
+        if profile is not None and not isinstance(profile, str):
+            self._send_json(
+                400, {"error": "bad_request", "detail": "profile must be a string"}
+            )
+            return
+        if device_id is not None and not isinstance(device_id, str):
+            self._send_json(
+                400,
+                {"error": "bad_request", "detail": "device_id must be a string"},
+            )
+            return
+        try:
+            result = self.server.service.ring(profile=profile, device_id=device_id)
+        except RateLimitedError:
+            self._send_json(429, {"error": "rate_limited"})
+        except ProfileNotFoundError:
+            self._send_json(404, {"error": "not_found", "detail": "unknown profile"})
+        except DeviceNotFoundError:
+            self._send_json(404, {"error": "not_found", "detail": "unknown device"})
+        except (
+            AuthenticationError,
+            TwoFactorRequiredError,
+            SessionExpiredError,
+        ):
+            self._send_json(503, {"error": "needs_reauth"})
+        except (ServiceUnavailableError, SoundUnavailableError):
+            self._send_json(503, {"error": "service_unavailable"})
+        except ValueError as exc:
+            self._send_json(400, {"error": "bad_request", "detail": str(exc)})
+        else:
+            self._send_json(200, result)
+
+    def _check_bearer(self) -> bool:
+        header = self.headers.get("Authorization", "")
+        if not header.startswith("Bearer "):
+            return False
+        token = header[len("Bearer "):].strip()
+        if not token:
+            return False
+        return hmac.compare_digest(token, self.server.bearer_token)
+
+    def _read_json(self) -> object:
+        length = self.headers.get("Content-Length")
+        if length is None:
+            raise ValueError("missing Content-Length")
+        try:
+            size = int(length)
+        except ValueError as exc:
+            raise ValueError("invalid Content-Length") from exc
+        if size > MAX_BODY_BYTES:
+            raise ValueError("request body too large")
+        raw = self.rfile.read(size)
+        try:
+            return json.loads(raw.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise ValueError("body is not valid JSON") from exc
+
+    def _send_json(self, status: int, payload: dict) -> None:
+        body = json.dumps(payload).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+
+class _Server(ThreadingHTTPServer):
+    """Threading HTTP server carrying the service and bearer token."""
+
+    daemon_threads = True
+    allow_reuse_address = True
+
+    def __init__(
+        self, address: tuple[str, int], service: RingService, bearer_token: str
+    ) -> None:
+        self.service = service
+        self.bearer_token = bearer_token
+        super().__init__(address, _Handler)
+
+
+def create_server(
+    config: ServerConfig,
+    client_factory: Optional[Callable[[Profile], FindMyClient]] = None,
+) -> _Server:
+    """Create (but do not start) the HTTP server."""
+    service = RingService(config, client_factory)
+    return _Server((config.host, config.port), service, config.bearer_token)
+
+
+def serve(
+    config: ServerConfig,
+    client_factory: Optional[Callable[[Profile], FindMyClient]] = None,
+) -> None:
+    """Serve forever (until Ctrl-C)."""
+    server = create_server(config, client_factory)
+    _LOGGER.info("findmy-sound listening on %s:%d", config.host, config.port)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        server.shutdown()
+        server.server_close()
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Entry point for `python -m findmy_sound.server`."""
+    parser = argparse.ArgumentParser(
+        prog="findmy-sound-server",
+        description="Authenticated HTTP service: ring Apple devices via iCloud.",
+    )
+    parser.add_argument("--config-dir", default=None)
+    parser.add_argument("--data-dir", default=None)
+    parser.add_argument("--bind", default=None)
+    parser.add_argument("--port", type=int, default=None)
+    args = parser.parse_args(argv)
+    try:
+        config = load_server_config(
+            config_dir=args.config_dir,
+            data_dir=args.data_dir,
+            host=args.bind,
+            port=args.port,
+        )
+    except ValueError as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        return 1
+    logging.basicConfig(
+        level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s"
+    )
+    serve(config)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
