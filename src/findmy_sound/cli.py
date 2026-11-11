@@ -1,1 +1,193 @@
-IiIiQ29tbWFuZC1saW5lIGludGVyZmFjZSBmb3IgZmluZG15LXNvdW5kLgoKICAgIGZpbmRteSBkZXZpY2VzCiAgICBmaW5kbXkgcGxheS1zb3VuZCAtLWRldmljZS1pZCBERVZJQ0VfSUQKICAgIGZpbmRteSBzZXJ2ZQoKYGRldmljZXNgIGFuZCBgcGxheS1zb3VuZGAgYXJlIHRoZSB2MSBDTEkuIGBzZXJ2ZWAgc3RhcnRzIHRoZQpzbWFsbCBhdXRoZW50aWNhdGVkIEhUVFAgc2VydmljZSAoc2VlIHNlcnZlci5weSkgdGhhdCBIb21lIEFzc2lzdGFudApjYWxscyBkaXJlY3RseTsgdGhlIHNlcnZpY2UgaXRzZWxmIG5ldmVyIHByb21wdHMgZm9yIGEgcGFzc3dvcmQgb3IgYQoyRkEgY29kZSDigJQgYSBwcm9maWxlIHdob3NlIHNlc3Npb24gaGFzIGV4cGlyZWQgcmVwb3J0cyBuZWVkc19yZWF1dGgKdW50aWwgc29tZW9uZSByZS1hdXRoZW50aWNhdGVzIGl0IGludGVyYWN0aXZlbHkgKHNlZSBTRVRVUC5tZCkuCiIiIgoKZnJvbSBfX2Z1dHVyZV9fIGltcG9ydCBhbm5vdGF0aW9ucwoKaW1wb3J0IGFyZ3BhcnNlCmltcG9ydCBsb2dnaW5nCmltcG9ydCBzeXMKCmZyb20gZmluZG15X3NvdW5kIGltcG9ydCBhdXRoLCBzZXJ2ZXIKZnJvbSBmaW5kbXlfc291bmQuY2xpZW50IGltcG9ydCBGaW5kTXlDbGllbnQKZnJvbSBmaW5kbXlfc291bmQuY29uZmlnIGltcG9ydCBsb2FkX3NlcnZlcl9jb25maWcKZnJvbSBmaW5kbXlfc291bmQuZXJyb3JzIGltcG9ydCBGaW5kTXlTb3VuZEVycm9yCmZyb20gZmluZG15X3NvdW5kLm1vZGVscyBpbXBvcnQgRGV2aWNlCgoKZGVmIF9idWlsZF9wYXJzZXIoKSAtPiBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcjoKICAgIHBhcnNlciA9IGFyZ3BhcnNlLkFyZ3VtZW50UGFyc2VyKAogICAgICAgIHByb2c9ImZpbmRteSIsCiAgICAgICAgZGVzY3JpcHRpb249Ikxpc3QgQXBwbGUgZGV2aWNlcyBhbmQgdHJpZ2dlciBQbGF5IFNvdW5kIHZpYSBpQ2xvdWQgRmluZCBEZXZpY2VzLiIsCiAgICApCiAgICBwYXJzZXIuYWRkX2FyZ3VtZW50KAogICAgICAgICItLWFwcGxlLWlkIiwKICAgICAgICBkZWZhdWx0PU5vbmUsCiAgICAgICAgaGVscD0iQXBwbGUgSUQgZW1haWwgYWRkcmVzcyB0byBhdXRoZW50aWNhdGUgd2l0aCAoZGV2aWNlcywgcGxheS1zb3VuZCkuIiwKICAgICkKICAgIHBhcnNlci5hZGRfYXJndW1lbnQoCiAgICAgICAgIi0tZGF0YS1kaXIiLAogICAgICAgIGRlZmF1bHQ9Tm9uZSwKICAgICAgICBoZWxwPSJCYXNlIGRpcmVjdG9yeSBmb3IgcHlpY2xvdWQgc2Vzc2lvbiBkYXRhICIKICAgICAgICAiKGRlZmF1bHQ6ICRGSU5ETVlfREFUQV9ESVIgb3Igfi8ubG9jYWwvc3RhdGUvZmluZG15LXNvdW5kL3Nlc3Npb25zKS4iLAogICAgKQogICAgcGFyc2VyLmFkZF9hcmd1bWVudCgKICAgICAgICAiLS1ub24taW50ZXJhY3RpdmUiLAogICAgICAgIGFjdGlvbj0ic3RvcmVfdHJ1ZSIsCiAgICAgICAgaGVscD0iTmV2ZXIgcHJvbXB0IGZvciBhIHBhc3N3b3JkIG9yIDJGQSBjb2RlOyBmYWlsIGNsZWFubHkgaW5zdGVhZC4iLAogICAgKQogICAgcGFyc2VyLmFkZF9hcmd1bWVudCgKICAgICAgICAiLS1wYXNzd29yZC1zb3VyY2UiLAogICAgICAgIGRlZmF1bHQ9ImF1dG8iLAogICAgICAgIGNob2ljZXM9YXV0aC5QQVNTV09SRF9TT1VSQ0VTLAogICAgICAgIGhlbHA9IldoZXJlIHRvIGdldCB0aGUgQXBwbGUgSUQgcGFzc3dvcmQgZnJvbSAiCiAgICAgICAgIihkZWZhdWx0OiBhdXRvID0gJEZJTkRNWV9QQVNTV09SRCwgdGhlbiBrZXljaGFpbikuIiwKICAgICkKICAgIHBhcnNlci5hZGRfYXJndW1lbnQoCiAgICAgICAgIi0tcGFzc3dvcmQtZmlsZSIsCiAgICAgICAgZGVmYXVsdD1Ob25lLAogICAgICAgIGhlbHA9IlBhdGggdG8gYSAwNjAwIGZpbGUgaG9sZGluZyB0aGUgcGFzc3dvcmQgIgogICAgICAgICIod2l0aCAtLXBhc3N3b3JkLXNvdXJjZSBmaWxlKS4iLAogICAgKQogICAgcGFyc2VyLmFkZF9hcmd1bWVudCgKICAgICAgICAiLXYiLCAiLS12ZXJib3NlIiwgYWN0aW9uPSJzdG9yZV90cnVlIiwgaGVscD0iRW5hYmxlIGRlYnVnIGxvZ2dpbmcuIgogICAgKQoKICAgIHN1YnBhcnNlcnMgPSBwYXJzZXIuYWRkX3N1YnBhcnNlcnMoZGVzdD0iY29tbWFuZCIsIHJlcXVpcmVkPVRydWUpCgogICAgc3VicGFyc2Vycy5hZGRfcGFyc2VyKCJkZXZpY2VzIiwgaGVscD0iTGlzdCBkZXZpY2VzIG9uIHRoaXMgQXBwbGUgQWNjb3VudC4iKQoKICAgIHBsYXlfc291bmRfcGFyc2VyID0gc3VicGFyc2Vycy5hZGRfcGFyc2VyKAogICAgICAgICJwbGF5LXNvdW5kIiwgaGVscD0iVHJpZ2dlciBQbGF5IFNvdW5kIG9uIGEgc3BlY2lmaWMgZGV2aWNlLiIKICAgICkKICAgIHBsYXlfc291bmRfcGFyc2VyLmFkZF9hcmd1bWVudCgKICAgICAgICAiLS1kZXZpY2UtaWQiLAogICAgICAgIHJlcXVpcmVkPVRydWUsCiAgICAgICAgaGVscD0iVGhlIGltbXV0YWJsZSBBcHBsZSBkZXZpY2UgSUQgdG8gcGxheSBzb3VuZCBvbiAoc2VlICdmaW5kbXkgZGV2aWNlcycpLiIsCiAgICApCiAgICBwbGF5X3NvdW5kX3BhcnNlci5hZGRfYXJndW1lbnQoCiAgICAgICAgIi0teWVzIiwKICAgICAgICBhY3Rpb249InN0b3JlX3RydWUiLAogICAgICAgIGhlbHA9IlNraXAgdGhlIGludGVyYWN0aXZlIGNvbmZpcm1hdGlvbiBwcm9tcHQuIiwKICAgICkKCiAgICBzZXJ2ZV9wYXJzZXIgPSBzdWJwYXJzZXJzLmFkZF9wYXJzZXIoCiAgICAgICAgInNlcnZlIiwgaGVscD0iU3RhcnQgdGhlIGF1dGhlbnRpY2F0ZWQgSFRUUCBzZXJ2aWNlIChzZWUgc2VydmVyLnB5KS4iCiAgICApCiAgICBzZXJ2ZV9wYXJzZXIuYWRkX2FyZ3VtZW50KAogICAgICAgICItLWNvbmZpZy1kaXIiLAogICAgICAgIGRlZmF1bHQ9Tm9uZSwKICAgICAgICBoZWxwPSJEaXJlY3RvcnkgaG9sZGluZyByaW5nLTxwcm9maWxlPi5lbnYgZmlsZXMgIgogICAgICAgICIoZGVmYXVsdDogfi8uY29uZmlnL2ZpbmRteS1zb3VuZCkuIiwKICAgICkKICAgIHNlcnZlX3BhcnNlci5hZGRfYXJndW1lbnQoCiAgICAgICAgIi0tYmluZCIsCiAgICAgICAgZGVmYXVsdD1Ob25lLAogICAgICAgIGhlbHA9IkFkZHJlc3MgdG8gbGlzdGVuIG9uIChkZWZhdWx0OiAkRklORE1ZX0JJTkQgb3IgMC4wLjAuMCkuIiwKICAgICkKICAgIHNlcnZlX3BhcnNlci5hZGRfYXJndW1lbnQoCiAgICAgICAgIi0tcG9ydCIsCiAgICAgICAgdHlwZT1pbnQsCiAgICAgICAgZGVmYXVsdD1Ob25lLAogICAgICAgIGhlbHA9IlBvcnQgdG8gbGlzdGVuIG9uIChkZWZhdWx0OiAkRklORE1ZX1BPUlQgb3IgODc2NSkuIiwKICAgICkKCiAgICByZXR1cm4gcGFyc2VyCgoKZGVmIF9wcmludF9kZXZpY2VzKGRldmljZXM6IGxpc3RbRGV2aWNlXSkgLT4gTm9uZToKICAgIGlmIG5vdCBkZXZpY2VzOgogICAgICAgIHByaW50KCJObyBkZXZpY2VzIGZvdW5kLiIpCiAgICAgICAgcmV0dXJuCiAgICBmb3IgZGV2aWNlIGluIGRldmljZXM6CiAgICAgICAgcHJpbnQoZiJOYW1lOiB7ZGV2aWNlLm5hbWV9IikKICAgICAgICBwcmludChmIk1vZGVsOiB7ZGV2aWNlLm1vZGVsX25hbWUgb3IgZGV2aWNlLm1vZGVsfSIpCiAgICAgICAgcHJpbnQoZiJEZXZpY2UgSUQ6IHtkZXZpY2UuZGV2aWNlX2lkfSIpCiAgICAgICAgcHJpbnQoZiJTdGF0dXM6IHtkZXZpY2Uuc3RhdHVzX2xhYmVsfSIpCiAgICAgICAgcHJpbnQoZiJCYXR0ZXJ5OiB7ZGV2aWNlLmJhdHRlcnlfbGFiZWx9IikKICAgICAgICBwcmludChmIlNvdW5kIGF2YWlsYWJsZTogeyd5ZXMnIGlmIGRldmljZS5zb3VuZF9hdmFpbGFibGUgZWxzZSAnbm8nfSIpCiAgICAgICAgcHJpbnQoIi0iICogNDApCgoKZGVmIF9jb25maXJtKHByb21wdDogc3RyKSAtPiBib29sOgogICAgdHJ5OgogICAgICAgIGFuc3dlciA9IGlucHV0KGYie3Byb21wdH0gW3kvTl06ICIpLnN0cmlwKCkubG93ZXIoKQogICAgZXhjZXB0IEVPRkVycm9yOgogICAgICAgICMgTm8gaW50ZXJhY3RpdmUgc3RkaW4gYXZhaWxhYmxlIChoZWFkbGVzcyBpbnZvY2F0aW9uKS4gRGVmYXVsdCB0bwogICAgICAgICMgIm5vIiBzbyBhIHNjcmlwdCB0aGF0IGZvcmdldHMgLS15ZXMgZmFpbHMgc2FmZSBpbnN0ZWFkIG9mCiAgICAgICAgIyBzaWxlbnRseSB0cmlnZ2VyaW5nIHRoZSBkZXZpY2UuCiAgICAgICAgcmV0dXJuIEZhbHNlCiAgICByZXR1cm4gYW5zd2VyIGluICgieSIsICJ5ZXMiKQoKCmRlZiBtYWluKGFyZ3Y6IGxpc3Rbc3RyXSB8IE5vbmUgPSBOb25lKSAtPiBpbnQ6CiAgICBwYXJzZXIgPSBfYnVpbGRfcGFyc2VyKCkKICAgIGFyZ3MgPSBwYXJzZXIucGFyc2VfYXJncyhhcmd2KQoKICAgIGxvZ2dpbmcuYmFzaWNDb25maWcoCiAgICAgICAgbGV2ZWw9bG9nZ2luZy5ERUJVRyBpZiBhcmdzLnZlcmJvc2UgZWxzZSBsb2dnaW5nLldBUk5JTkcsCiAgICAgICAgZm9ybWF0PSIlKGxldmVsbmFtZSlzOiUobmFtZSlzOiUobWVzc2FnZSlzIiwKICAgICkKCiAgICBpZiBhcmdzLmNvbW1hbmQgPT0gInNlcnZlIjoKICAgICAgICB0cnk6CiAgICAgICAgICAgIGNvbmZpZyA9IGxvYWRfc2VydmVyX2NvbmZpZygKICAgICAgICAgICAgICAgIGNvbmZpZ19kaXI9YXJncy5jb25maWdfZGlyLAogICAgICAgICAgICAgICAgZGF0YV9kaXI9YXJncy5kYXRhX2RpciwKICAgICAgICAgICAgICAgIGhvc3Q9YXJncy5iaW5kLAogICAgICAgICAgICAgICAgcG9ydD1hcmdzLnBvcnQsCiAgICAgICAgICAgICkKICAgICAgICBleGNlcHQgVmFsdWVFcnJvciBhcyBleGM6CiAgICAgICAgICAgIHByaW50KGYiRXJyb3I6IHtleGN9IiwgZmlsZT1zeXMuc3RkZXJyKQogICAgICAgICAgICByZXR1cm4gMQogICAgICAgIHNlcnZlci5zZXJ2ZShjb25maWcpCiAgICAgICAgcmV0dXJuIDAKCiAgICBpZiBub3QgYXJncy5hcHBsZV9pZDoKICAgICAgICBwYXJzZXIuZXJyb3IoIi0tYXBwbGUtaWQgaXMgcmVxdWlyZWQgZm9yIHRoaXMgY29tbWFuZCIpCgogICAgdHJ5OgogICAgICAgIHNlcnZpY2UgPSBhdXRoLmxvZ2luKAogICAgICAgICAgICBhcmdzLmFwcGxlX2lkLAogICAgICAgICAgICBkYXRhX2Rpcj1hcmdzLmRhdGFfZGlyLAogICAgICAgICAgICBpbnRlcmFjdGl2ZT1ub3QgYXJncy5ub25faW50ZXJhY3RpdmUsCiAgICAgICAgICAgIHBhc3N3b3JkX3NvdXJjZT1hcmdzLnBhc3N3b3JkX3NvdXJjZSwKICAgICAgICAgICAgcGFzc3dvcmRfZmlsZT1hcmdzLnBhc3N3b3JkX2ZpbGUsCiAgICAgICAgKQogICAgICAgIGNsaWVudCA9IEZpbmRNeUNsaWVudChzZXJ2aWNlKQoKICAgICAgICBpZiBhcmdzLmNvbW1hbmQgPT0gImRldmljZXMiOgogICAgICAgICAgICBfcHJpbnRfZGV2aWNlcyhjbGllbnQubGlzdF9kZXZpY2VzKCkpCiAgICAgICAgICAgIHJldHVybiAwCgogICAgICAgIGlmIGFyZ3MuY29tbWFuZCA9PSAicGxheS1zb3VuZCI6CiAgICAgICAgICAgIGlmIG5vdCBhcmdzLnllczoKICAgICAgICAgICAgICAgIHRhcmdldCA9IGNsaWVudC5nZXRfZGV2aWNlKGFyZ3MuZGV2aWNlX2lkKQogICAgICAgICAgICAgICAgaWYgbm90IF9jb25maXJtKAogICAgICAgICAgICAgICAgICAgIGYiUGxheSBzb3VuZCBvbiAne3RhcmdldC5uYW1lfScgKHt0YXJnZXQubW9kZWxfbmFtZX0pPyIKICAgICAgICAgICAgICAgICk6CiAgICAgICAgICAgICAgICAgICAgcHJpbnQoIkNhbmNlbGxlZC4iKQogICAgICAgICAgICAgICAgICAgIHJldHVybiAxCiAgICAgICAgICAgIGNsaWVudC5wbGF5X3NvdW5kKGFyZ3MuZGV2aWNlX2lkKQogICAgICAgICAgICBwcmludChmIlBsYXkgU291bmQgdHJpZ2dlcmVkIGZvciBkZXZpY2Uge2FyZ3MuZGV2aWNlX2lkfS4iKQogICAgICAgICAgICByZXR1cm4gMAoKICAgIGV4Y2VwdCBGaW5kTXlTb3VuZEVycm9yIGFzIGV4YzoKICAgICAgICBwcmludChmIkVycm9yOiB7ZXhjfSIsIGZpbGU9c3lzLnN0ZGVycikKICAgICAgICByZXR1cm4gMQoKICAgIHBhcnNlci5lcnJvcigiVW5rbm93biBjb21tYW5kIikKICAgIHJldHVybiAyICAjIHByYWdtYTogbm8gY292ZXIgLSBhcmdwYXJzZS5lcnJvciBleGl0cyBiZWZvcmUgdGhpcwoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBzeXMuZXhpdChtYWluKCkpCg==
+"""Command-line interface for findmy-sound.
+
+    findmy devices
+    findmy play-sound --device-id DEVICE_ID
+    findmy serve
+
+`devices` and `play-sound` are the v1 CLI. `serve` starts the
+small authenticated HTTP service (see server.py) that Home Assistant
+calls directly; the service itself never prompts for a password or a
+2FA code — a profile whose session has expired reports needs_reauth
+until someone re-authenticates it interactively (see SETUP.md).
+"""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import sys
+
+from findmy_sound import auth, server
+from findmy_sound.client import FindMyClient
+from findmy_sound.config import load_server_config
+from findmy_sound.errors import FindMySoundError
+from findmy_sound.models import Device
+
+
+def _build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="findmy",
+        description="List Apple devices and trigger Play Sound via iCloud Find Devices.",
+    )
+    parser.add_argument(
+        "--apple-id",
+        default=None,
+        help="Apple ID email address to authenticate with (devices, play-sound).",
+    )
+    parser.add_argument(
+        "--data-dir",
+        default=None,
+        help="Base directory for pyicloud session data "
+        "(default: $FINDMY_DATA_DIR or ~/.local/state/findmy-sound/sessions).",
+    )
+    parser.add_argument(
+        "--non-interactive",
+        action="store_true",
+        help="Never prompt for a password or 2FA code; fail cleanly instead.",
+    )
+    parser.add_argument(
+        "--password-source",
+        default="auto",
+        choices=auth.PASSWORD_SOURCES,
+        help="Where to get the Apple ID password from "
+        "(default: auto = $FINDMY_PASSWORD, then keychain).",
+    )
+    parser.add_argument(
+        "--password-file",
+        default=None,
+        help="Path to a 0600 file holding the password "
+        "(with --password-source file).",
+    )
+    parser.add_argument(
+        "-v", "--verbose", action="store_true", help="Enable debug logging."
+    )
+
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    subparsers.add_parser("devices", help="List devices on this Apple Account.")
+
+    play_sound_parser = subparsers.add_parser(
+        "play-sound", help="Trigger Play Sound on a specific device."
+    )
+    play_sound_parser.add_argument(
+        "--device-id",
+        required=True,
+        help="The immutable Apple device ID to play sound on (see 'findmy devices').",
+    )
+    play_sound_parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip the interactive confirmation prompt.",
+    )
+
+    serve_parser = subparsers.add_parser(
+        "serve", help="Start the authenticated HTTP service (see server.py)."
+    )
+    serve_parser.add_argument(
+        "--config-dir",
+        default=None,
+        help="Directory holding ring-<profile>.env files "
+        "(default: ~/.config/findmy-sound).",
+    )
+    serve_parser.add_argument(
+        "--bind",
+        default=None,
+        help="Address to listen on (default: $FINDMY_BIND or 0.0.0.0).",
+    )
+    serve_parser.add_argument(
+        "--port",
+        type=int,
+        default=None,
+        help="Port to listen on (default: $FINDMY_PORT or 8765).",
+    )
+
+    return parser
+
+
+def _print_devices(devices: list[Device]) -> None:
+    if not devices:
+        print("No devices found.")
+        return
+    for device in devices:
+        print(f"Name: {device.name}")
+        print(f"Model: {device.model_name or device.model}")
+        print(f"Device ID: {device.device_id}")
+        print(f"Status: {device.status_label}")
+        print(f"Battery: {device.battery_label}")
+        print(f"Sound available: {'yes' if device.sound_available else 'no'}")
+        print("-" * 40)
+
+
+def _confirm(prompt: str) -> bool:
+    try:
+        answer = input(f"{prompt} [y/N]: ").strip().lower()
+    except EOFError:
+        # No interactive stdin available (headless invocation). Default to
+        # "no" so a script that forgets --yes fails safe instead of
+        # silently triggering the device.
+        return False
+    return answer in ("y", "yes")
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = _build_parser()
+    args = parser.parse_args(argv)
+
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.WARNING,
+        format="%(levelname)s:%(name)s:%(message)s",
+    )
+
+    if args.command == "serve":
+        try:
+            config = load_server_config(
+                config_dir=args.config_dir,
+                data_dir=args.data_dir,
+                host=args.bind,
+                port=args.port,
+            )
+        except ValueError as exc:
+            print(f"Error: {exc}", file=sys.stderr)
+            return 1
+        server.serve(config)
+        return 0
+
+    if not args.apple_id:
+        parser.error("--apple-id is required for this command")
+
+    try:
+        service = auth.login(
+            args.apple_id,
+            data_dir=args.data_dir,
+            interactive=not args.non_interactive,
+            password_source=args.password_source,
+            password_file=args.password_file,
+        )
+        client = FindMyClient(service)
+
+        if args.command == "devices":
+            _print_devices(client.list_devices())
+            return 0
+
+        if args.command == "play-sound":
+            if not args.yes:
+                target = client.get_device(args.device_id)
+                if not _confirm(
+                    f"Play sound on '{target.name}' ({target.model_name})?"
+                ):
+                    print("Cancelled.")
+                    return 1
+            client.play_sound(args.device_id)
+            print(f"Play Sound triggered for device {args.device_id}.")
+            return 0
+
+    except FindMySoundError as exc:
+        print(f"Error: {exc}", file=sys.stderr)
+        return 1
+
+    parser.error("Unknown command")
+    return 2  # pragma: no cover - argparse.error exits before this
+
+
+if __name__ == "__main__":
+    sys.exit(main())
