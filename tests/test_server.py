@@ -244,6 +244,27 @@ def _request(server, method, path, body=None, token=None):
         return exc.code, json.loads(exc.read() or b"{}"), exc.headers
 
 
+def _get_raw(server, path):
+    port = server.server_address[1]
+    with urllib.request.urlopen(
+        f"http://127.0.0.1:{port}{path}", timeout=5
+    ) as resp:
+        return resp.status, resp.read().decode("utf-8"), resp.headers
+
+
+def test_ring_page_served_at_root_and_ring_html(running_server):
+    server, _, _ = running_server
+    for path in ("/", "/ring.html"):
+        status, body, headers = _get_raw(server, path)
+        assert status == 200
+        assert "text/html" in headers.get("Content-Type", "")
+        assert "Ring my phone" in body
+        assert "findmy-bearer-token" in body  # localStorage key, not a secret
+        assert TOKEN not in body
+        assert 'fetch("/ring"' in body
+        assert "localStorage" in body
+
+
 def test_healthz_needs_no_auth(running_server):
     server, _, _ = running_server
     status, body, _ = _request(server, "GET", "/healthz")

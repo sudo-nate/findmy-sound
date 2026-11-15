@@ -5,6 +5,10 @@ on the LAN) can trigger Play Sound without SSH:
 
   POST /ring    {"profile": "me"} or {"device_id": "..."} (Bearer required)
   GET  /healthz (no auth; service status and per-profile auth state)
+  GET  / or /ring.html (no auth; home-screen button page — the page asks
+         for the bearer token once, keeps it in the browser's localStorage,
+         and POSTs to /ring from the same origin, so no CORS is involved.
+         No token is ever baked into the page.)
 
 Security bar (enforced, not aspirational):
   - Bearer token, from the service env file (FINDMY_BEARER_TOKEN).
@@ -57,6 +61,122 @@ _LOGGER = logging.getLogger(__name__)
 MAX_BODY_BYTES = 64 * 1024
 PER_PROFILE_MIN_SECONDS = 10.0
 GLOBAL_MAX_PER_MINUTE = 10
+
+# Home-screen button page (GET / and /ring.html). Dependency-free, no
+# token baked in: the bearer token is entered once by the user and kept in
+# the browser's localStorage on their own device.
+RING_PAGE_HTML = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ring Phone">
+<title>Ring My Phone</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+         align-items: center; justify-content: center; gap: 1.2rem;
+         font-family: -apple-system, system-ui, sans-serif; background: #111;
+         color: #eee; padding: 1.5rem; text-align: center; }
+  h1 { font-size: 1.4rem; margin: 0; }
+  #ring { width: min(22rem, 90vw); height: 6rem; font-size: 1.6rem;
+          font-weight: 700; border: 0; border-radius: 1rem;
+          background: #0a84ff; color: #fff; cursor: pointer; }
+  #ring:disabled { background: #555; cursor: wait; }
+  #status { min-height: 2.5em; font-size: 1.1rem; }
+  #status.ok { color: #30d158; }
+  #status.err { color: #ff453a; }
+  #token-box { display: none; flex-direction: column; gap: 0.6rem;
+               width: min(22rem, 90vw); }
+  #token-box input { font-size: 1rem; padding: 0.7rem; border-radius: 0.6rem;
+                     border: 1px solid #555; background: #222; color: #eee; }
+  #token-box button { font-size: 1rem; padding: 0.7rem; border-radius: 0.6rem;
+                      border: 0; background: #30d158; color: #000;
+                      font-weight: 600; cursor: pointer; }
+  #forget { background: none; border: 0; color: #888; font-size: 0.9rem;
+            cursor: pointer; text-decoration: underline; }
+  .hint { color: #888; font-size: 0.9rem; max-width: 22rem; }
+</style>
+</head>
+<body>
+<h1>🔔 Ring My Phone</h1>
+<button id="ring" type="button">Ring my phone</button>
+<p id="status" role="status"></p>
+<div id="token-box">
+  <p class="hint">First use: enter the findmy-sound bearer token. It is stored
+  only in this browser (localStorage) and sent with each ring request.</p>
+  <input id="token" type="password" placeholder="Bearer token"
+         autocomplete="off" autocapitalize="off" spellcheck="false">
+  <button id="save-token" type="button">Save token</button>
+</div>
+<button id="forget" type="button">Forget saved token</button>
+<script>
+  var KEY = "findmy-bearer-token";
+  var statusEl = document.getElementById("status");
+  var ringBtn = document.getElementById("ring");
+  var tokenBox = document.getElementById("token-box");
+  var tokenInput = document.getElementById("token");
+
+  function setStatus(msg, kind) {
+    statusEl.textContent = msg;
+    statusEl.className = kind || "";
+  }
+  function showTokenBox() { tokenBox.style.display = "flex"; tokenInput.focus(); }
+
+  document.getElementById("save-token").addEventListener("click", function () {
+    var t = tokenInput.value.trim();
+    if (!t) { setStatus("Enter the token first.", "err"); return; }
+    localStorage.setItem(KEY, t);
+    tokenInput.value = "";
+    tokenBox.style.display = "none";
+    setStatus("Token saved on this device. Tap the button to ring.", "ok");
+  });
+
+  document.getElementById("forget").addEventListener("click", function () {
+    localStorage.removeItem(KEY);
+    setStatus("Saved token forgotten.", "");
+    showTokenBox();
+  });
+
+  ringBtn.addEventListener("click", async function () {
+    var token = localStorage.getItem(KEY);
+    if (!token) { setStatus("No token saved yet — enter it below.", "err"); showTokenBox(); return; }
+    ringBtn.disabled = true;
+    setStatus("Ringing…");
+    try {
+      var resp = await fetch("/ring", {
+        method: "POST",
+        headers: { "Content-Type": "application/json",
+                   "Authorization": "Bearer " + token },
+        body: JSON.stringify({ profile: "me" })
+      });
+      var data = await resp.json().catch(function () { return {}; });
+      if (resp.ok) {
+        setStatus("✅ Ringing! Listen for your phone.", "ok");
+      } else if (resp.status === 401) {
+        setStatus("❌ Token rejected (401). Re-enter it below.", "err");
+        localStorage.removeItem(KEY);
+        showTokenBox();
+      } else if (resp.status === 429) {
+        setStatus("⏳ Too soon — wait a few seconds and try again.", "err");
+      } else if (data.error === "needs_reauth") {
+        setStatus("❌ iCloud session expired — re-auth needed on the server.", "err");
+      } else {
+        setStatus("❌ Failed (" + resp.status + "): " + (data.error || "unknown error"), "err");
+      }
+    } catch (e) {
+      setStatus("❌ Could not reach the service: " + e.message, "err");
+    } finally {
+      ringBtn.disabled = false;
+    }
+  });
+
+  if (!localStorage.getItem(KEY)) { showTokenBox(); }
+</script>
+</body>
+</html>
+"""
 
 
 def _redact(device_id: str) -> str:
@@ -257,8 +377,11 @@ class _Handler(BaseHTTPRequestHandler):
         _LOGGER.info("%s - %s", self.address_string(), fmt % args)
 
     def do_GET(self) -> None:
-        if urlsplit(self.path).path == "/healthz":
+        path = urlsplit(self.path).path
+        if path == "/healthz":
             self._send_json(200, self.server.service.health())
+        elif path in ("/", "/ring.html"):
+            self._send_html(200, RING_PAGE_HTML)
         else:
             self._send_json(404, {"error": "not_found"})
 
@@ -337,6 +460,14 @@ class _Handler(BaseHTTPRequestHandler):
             return json.loads(raw.decode("utf-8"))
         except (UnicodeDecodeError, json.JSONDecodeError) as exc:
             raise ValueError("body is not valid JSON") from exc
+
+    def _send_html(self, status: int, html: str) -> None:
+        body = html.encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
 
     def _send_json(self, status: int, payload: dict) -> None:
         body = json.dumps(payload).encode("utf-8")
