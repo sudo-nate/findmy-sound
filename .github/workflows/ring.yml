@@ -18,8 +18,10 @@ jobs:
     steps:
       - name: Ring device
         env:
-          FINDMY_URL: https://findmy-ring.nrghome.workers.dev
+          FINDMY_BEARER_TOKEN: ${{ secrets.FINDMY_BEARER_TOKEN }}
+          FINDMY_URL: https://ring.cockloft.space/ring
         run: |
           curl -fsS -X POST "$FINDMY_URL" \
+            -H "Authorization: Bearer $FINDMY_BEARER_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{\"profile\": \"${{ inputs.profile }}\"}"
